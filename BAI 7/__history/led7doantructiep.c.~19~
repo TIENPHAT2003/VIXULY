@@ -4,12 +4,6 @@
 signed int8 i,dem=0;
 unsigned int32 y,n;
 
-#define lcd_rs pin_c5
-#define lcd_rw pin_c6
-#define lcd_e  pin_c7
-#define output_lcd   output_d
-
-#include<tv_lcd.c>
 void st()
 {
    output_a(0xff);
@@ -133,8 +127,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e1)==0)
       {
-         dem++;
-         if(dem>10) dem = 1;
+         dem=dem+1;
          while(input(pin_e1)==0);
       }
    }
@@ -143,8 +136,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e2)==0)
       {
-         dem--;
-         if(dem < 1) dem = 10;
+         dem=dem-1;
          while(input(pin_e2)==0);
       }
    }
@@ -156,12 +148,15 @@ void main()
    set_tris_c(0);
    set_tris_d(0);
    set_tris_e(0xf);
-   output_a(0);
-   output_b(0);
    while(true)
-   {  
-      nutnhan();
-  
+   {  nutnhan();
+      if(dem == 0) {
+         output_a(0);
+         output_b(0);
+      }
+      if(dem > 10) dem = 0;
+      else if(dem < 1 ) dem = 10;
+      
       if(dem==1)  st(); // sang tat
      
       if(dem==2)  stsp(); // sang dan sang phai

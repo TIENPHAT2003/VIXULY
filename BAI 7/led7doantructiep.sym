@@ -1,0 +1,112 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     i
+021     dem
+022-025 y
+026-029 n
+02A     @TRIS_C
+02B     @delay_ms1.P1
+02B     st.@SCRATCH1
+02B     stsp.@SCRATCH1
+02B     spst.@SCRATCH1
+02B     tpst.@SCRATCH1
+02B     ttsp.@SCRATCH1
+02B     strn.@SCRATCH1
+02B     snvt.@SCRATCH1
+02B     tnvt.@SCRATCH1
+02B     ttrn.@SCRATCH1
+02B     zichzac.@SCRATCH1
+02B     nutnhan.@SCRATCH1
+02C     st.@SCRATCH2
+02C     stsp.@SCRATCH2
+02C     spst.@SCRATCH2
+02C     tpst.@SCRATCH2
+02C     ttsp.@SCRATCH2
+02C     strn.@SCRATCH2
+02C     snvt.@SCRATCH2
+02C     tnvt.@SCRATCH2
+02C     ttrn.@SCRATCH2
+02C     zichzac.@SCRATCH2
+02D     stsp.@SCRATCH3
+02D     spst.@SCRATCH3
+02D     tpst.@SCRATCH3
+02D     ttsp.@SCRATCH3
+02D     zichzac.@SCRATCH3
+02E     stsp.@SCRATCH4
+02E     spst.@SCRATCH4
+02E     tpst.@SCRATCH4
+02E     ttsp.@SCRATCH4
+02E     zichzac.@SCRATCH4
+02F     stsp.@SCRATCH5
+02F     spst.@SCRATCH5
+02F     tpst.@SCRATCH5
+02F     ttsp.@SCRATCH5
+02F     zichzac.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000018  nutnhan
+000051  st
+00007C  stsp
+0000AD  spst
+0000DE  tpst
+000114  ttsp
+00014A  strn
+00018A  snvt
+0001CA  tnvt
+00020D  ttrn
+000250  zichzac
+000281  MAIN
+000281  @cinit1
+00029C  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\
+
+Project Files:
+    led7doantructiep.c                                      [11-Oct-23 11:45  CRC=0C552120]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 10:58  CRC=85F53194]
+
+Source signature=BE4E962D
+Program memory checksum=0000
+Hex file CRC=B4FF
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\led7doantructiep (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   led7doantructiep.xsym
+    Errors:      led7doantructiep.err
+    Ext Symbols: led7doantructiep.esym
+    INHX8:       led7doantructiep.hex
+    Symbols:     led7doantructiep.sym
+    List:        led7doantructiep.lst
+    Debug/COFF:  led7doantructiep.cof
+    Project:     led7doantructiep.ccspjt
+    Call Tree:   led7doantructiep.tre
+    Statistics:  led7doantructiep.STA

@@ -2,23 +2,25 @@
 #fuses intrc_io
 #use delay(clock=8M)
 signed int8 i,dem=0;
-unsigned int32 y,n;
+unsigned int32 y,n, z;
 
-#define lcd_rs pin_c5
-#define lcd_rw pin_c6
-#define lcd_e  pin_c7
-#define output_lcd   output_d
-
-#include<tv_lcd.c>
 void st()
 {
    output_a(0xff);
    output_b(0xff);
-   delay_ms(200);
-   if(input(pin_e1)==0||input(pin_e2)==0) break;
+   delay_ms(500);
+    for(z=0;z<200;z++) 
+    {    
+      
+       if(input(pin_e1)==0||input(pin_e2)==0) break;
+       }
    output_a(0);
-   output_b(0);   
-   if(input(pin_e1)==0||input(pin_e2)==0) break;
+   output_b(0);
+   for(z=0;z<200;z++) 
+    {    
+      
+       if(input(pin_e1)==0||input(pin_e2)==0) break;
+       }
 }
 void stsp()
 {
@@ -28,6 +30,9 @@ void stsp()
       // 8led 1111 1111 >>8 = 0000 0000 >>7 0000 0001
       output_a(y);
       output_b(y>>8);
+//!      output_c(y>>16);
+//!      output_d(y>>24);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
@@ -39,7 +44,10 @@ void spst()
       y=0xffff<<i;
       // 8led 1111 1111 <<8 = 0000 0000 <<7 1000 0000
       output_a(y);
-      output_b(y>>8);  
+      output_b(y>>8);
+//!      output_c(y>>16);
+//!      output_d(y>>24);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
@@ -52,6 +60,9 @@ void tpst()
       // 8led 1111 1111 >>8 = 0000 0000 >>7 1000 0000 sau khi dao 0111 1111
       output_a(y);
       output_b(y>>8);
+//!      output_c(y>>16);
+//!      output_d(y>>24);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
@@ -63,6 +74,9 @@ void ttsp()
       y=~(0xffff>>i);
       output_a(y);
       output_b(y>>8);
+//!      output_c(y>>16);
+//!      output_d(y>>24);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
@@ -74,7 +88,10 @@ void strn()   // a,b sang tu phai sang trai c,d sang tu trai sang phai
       y=(0xff<<i);  
       n=(0xff>>i);
       output_a(y);
+//!      output_b(y>>8);
       output_b(n);
+//!      output_d(n>>8);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
   }
@@ -86,7 +103,10 @@ void snvt()   // a,b sang tu trai sang phai c,d sang tu pst
       y=(0xff>>i);  
       n=(0xff<<i);
       output_a(y);
+//!      output_b(y>>8);
       output_b(n);
+//!      output_d(n>>8);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
   }
@@ -98,7 +118,10 @@ void tnvt()
       y=~(0xff>>i);  
       n=~(0xff<<i);
       output_a(y);
+//!      output_b(y>>8);
       output_b(n);
+//!      output_d(n>>8);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
@@ -110,7 +133,10 @@ void ttrn()
       y=~(0xff<<i);  
       n=~(0xff>>i);
       output_a(y);
+//!      output_b(y>>8);
       output_b(n);
+//!      output_d(n>>8);
+      
       delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
   }
@@ -122,7 +148,10 @@ void zichzac()
       y=(0xaaaa>>i);
       output_a(y);
       output_b(y>>8);
-      delay_ms(100);
+//!      output_d(y>>16);
+//!      output_c(y>>24);
+      
+      delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
 }
@@ -133,8 +162,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e1)==0)
       {
-         dem++;
-         if(dem>10) dem = 1;
+         dem=dem+1;
          while(input(pin_e1)==0);
       }
    }
@@ -143,8 +171,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e2)==0)
       {
-         dem--;
-         if(dem < 1) dem = 10;
+         dem=dem-1;
          while(input(pin_e2)==0);
       }
    }
@@ -159,28 +186,32 @@ void main()
    output_a(0);
    output_b(0);
    while(true)
-   {  
-      nutnhan();
-  
+   {  nutnhan();
+      if(dem==0)
+      {
+
+      }
+      
+      if(dem>10||dem<0) dem=0;
       if(dem==1)  st(); // sang tat
      
-      if(dem==2)  stsp(); // sang dan sang phai
+      if(dem==2)  stsp(); // sang tat sang phai
      
-      if(dem==3)  spst(); // sang dan sang trai
+      if(dem==3)  spst();
      
-      if(dem==4)  tpst(); // tat dan sang trai
+      if(dem==4)  tpst();
       
-      if(dem==5)  ttsp(); // tat dan sang phai
+      if(dem==5)  ttsp();
       
-      if(dem==6)  strn(); // sang trong ra
+      if(dem==6)  strn();
       
-      if(dem==7)  snvt(); // sang ngoai vao
+      if(dem==7)  snvt();
       
-      if(dem==8)  tnvt(); // tat ngoai vao
+      if(dem==8)  tnvt();
      
-      if(dem==9)  ttrn(); // tat trong ra
+      if(dem==9)  ttrn();
       
-      if(dem==10) zichzac(); // zich zac
+      if(dem==10) zichzac();
      
    }
 }

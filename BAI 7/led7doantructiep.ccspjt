@@ -1,0 +1,37 @@
+[PROJECT]
+Target=led7doantructiep.hex
+Processor_Text=PIC16F887
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=led7doantructiep.c
+[led7doantructiep.c]
+Type=4
+[mru-list]
+1=led7doantructiep.c
+
+[defines]
+buildcount=22
+
+[ProjectLog]
+Days=1
+D1=11-10-2023
+D1_L=6
+D1_L1=[40344]Stopped Editing.
+D1_L2=[40344]Started Editing.
+D1_L3=[42037]Stopped Editing.
+D1_L4=[42170]Started Editing.
+D1_L5=[42350]Stopped Editing.
+TotalEdit=27
+TotalDebug=0
+D1_E=27
+D1_D=0
+D1_L6=[42350]Project Closed.
+
+[Opened Files]
+1=led7doantructiep.c
+t1=1
+Count=1
+[Units]
+Count=1
+1=led7doantructiep (main)

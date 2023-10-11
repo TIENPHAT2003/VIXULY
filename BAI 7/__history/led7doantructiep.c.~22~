@@ -4,12 +4,6 @@
 signed int8 i,dem=0;
 unsigned int32 y,n;
 
-#define lcd_rs pin_c5
-#define lcd_rw pin_c6
-#define lcd_e  pin_c7
-#define output_lcd   output_d
-
-#include<tv_lcd.c>
 void st()
 {
    output_a(0xff);
@@ -122,7 +116,7 @@ void zichzac()
       y=(0xaaaa>>i);
       output_a(y);
       output_b(y>>8);
-      delay_ms(100);
+      delay_ms(200);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
 }

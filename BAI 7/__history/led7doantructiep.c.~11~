@@ -4,12 +4,6 @@
 signed int8 i,dem=0;
 unsigned int32 y,n;
 
-#define lcd_rs pin_c5
-#define lcd_rw pin_c6
-#define lcd_e  pin_c7
-#define output_lcd   output_d
-
-#include<tv_lcd.c>
 void st()
 {
    output_a(0xff);
@@ -122,7 +116,7 @@ void zichzac()
       y=(0xaaaa>>i);
       output_a(y);
       output_b(y>>8);
-      delay_ms(100);
+      delay_ms(50);
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
 }
@@ -133,8 +127,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e1)==0)
       {
-         dem++;
-         if(dem>10) dem = 1;
+         dem=dem+1;
          while(input(pin_e1)==0);
       }
    }
@@ -143,8 +136,7 @@ void nutnhan()
       delay_ms(20);
       if(input(pin_e2)==0)
       {
-         dem--;
-         if(dem < 1) dem = 10;
+         dem=dem-1;
          while(input(pin_e2)==0);
       }
    }
@@ -159,28 +151,32 @@ void main()
    output_a(0);
    output_b(0);
    while(true)
-   {  
-      nutnhan();
-  
+   {  nutnhan();
+      if(dem==0)
+      {
+
+      }
+      
+      if(dem>10||dem<0) dem=0;
       if(dem==1)  st(); // sang tat
      
-      if(dem==2)  stsp(); // sang dan sang phai
+      if(dem==2)  stsp(); // sang tat sang phai
      
-      if(dem==3)  spst(); // sang dan sang trai
+      if(dem==3)  spst();
      
-      if(dem==4)  tpst(); // tat dan sang trai
+      if(dem==4)  tpst();
       
-      if(dem==5)  ttsp(); // tat dan sang phai
+      if(dem==5)  ttsp();
       
-      if(dem==6)  strn(); // sang trong ra
+      if(dem==6)  strn();
       
-      if(dem==7)  snvt(); // sang ngoai vao
+      if(dem==7)  snvt();
       
-      if(dem==8)  tnvt(); // tat ngoai vao
+      if(dem==8)  tnvt();
      
-      if(dem==9)  ttrn(); // tat trong ra
+      if(dem==9)  ttrn();
       
-      if(dem==10) zichzac(); // zich zac
+      if(dem==10) zichzac();
      
    }
 }
