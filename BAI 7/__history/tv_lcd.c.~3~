@@ -18,7 +18,7 @@ void lcd_data(int8 a)
 }
 void lcd_setup()
 {     
-      lcd_command(0x38); delay_ms(5);
+      lcd_command(0x38); delay_ms(25);
       lcd_command(0x0c); 
-      lcd_command(0x01); delay_ms(2);
+      lcd_command(0x01); delay_ms(10);
 }

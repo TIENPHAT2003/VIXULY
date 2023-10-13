@@ -200,8 +200,6 @@ void main()
    lcd_data("MSSV: 21151309");
    lcd_command(0x94);
    lcd_data("KHONG CO TRANG THAI");
-   lcd_command(0xd4);
-   printf(lcd_data, "SO RANDOM: %lu", rand()%100);
    while(true)
    {  
       nutnhan();

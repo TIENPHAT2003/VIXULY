@@ -2,13 +2,14 @@
 #fuses intrc_io
 #use delay(clock=8M)
 signed int8 i,dem=0;
-unsigned int32 y,n;
+unsigned int32 y,n,random;
 
 #define lcd_rs pin_c5
 #define lcd_rw pin_c6
-#define lcd_e pin_c7
-#define output_lcd output_d
-#include <tv_lcd.c>
+#define lcd_e  pin_c7
+#define output_lcd   output_d
+
+#include<tv_lcd.c>
 #include<stdlib.h>
 void st()
 {
@@ -128,32 +129,43 @@ void zichzac()
 }
 
 void lcd_trangthai()
-{  
+{     
       lcd_setup();
-      lcd_command(0x80);
       lcd_data("HO TEN: VU TIEN PHAT");
       lcd_command(0xc0);
       lcd_data("MSSV: 21151309");
       lcd_command(0x94);
-      if(dem==1)  lcd_data("SANG TAT"); // sang tat
-     
-      if(dem==2)  lcd_data("SANG DAN SANG PHAI"); // sang dan sang phai
-     
-      if(dem==3)  lcd_data("SANG DAN SANG TRAI"); // sang dan sang trai
-     
-      if(dem==4)  lcd_data("TAT DAN SANG TRAI"); // tat dan sang trai
-      
-      if(dem==5)  lcd_data("TAT DAN SANG PHAI"); // tat dan sang phai
-      
-      if(dem==6)  lcd_data("SANG TRONG RA");; // sang trong ra
-      
-      if(dem==7)  lcd_data("SANG NGOAI VAO"); // sang ngoai vao
-      
-      if(dem==8)  lcd_data("TAT NGOAI VAO"); // tat ngoai vao
-     
-      if(dem==9)  lcd_data("TAT TRONG RA"); // tat trong ra
-      
-      if(dem==10) lcd_data("ZICH ZAC"); // zich zac
+
+      if(dem==1)  {
+      lcd_data("SANG TAT"); // sang tat
+      }
+      if(dem==2)  {
+      lcd_data("SANG DAN SANG PHAI"); // sang dan sang phai
+      }
+      if(dem==3){
+      lcd_data("SANG DAN SANG TRAI"); // sang dan sang trai
+      }
+      if(dem==4){
+      lcd_data("TAT DAN SANG TRAI"); // tat dan sang trai
+      }
+      if(dem==5){  
+      lcd_data("TAT DAN SANG PHAI"); // tat dan sang phai
+      }  
+      if(dem==6) {
+      lcd_data("SANG TRONG RA"); // sang trong ra
+      }
+      if(dem==7){
+      lcd_data("SANG NGOAI VAO"); // sang ngoai vao
+      }
+      if(dem==8){
+      lcd_data("TAT NGOAI VAO"); // tat ngoai vao
+      }
+      if(dem==9){
+      lcd_data("TAT TRONG RA"); // tat trong ra
+      }
+      if(dem==10){
+      lcd_data("ZICH ZAC"); // zich zac
+      }
 }
 void nutnhan()
 {
@@ -165,8 +177,12 @@ void nutnhan()
          dem++;
          if(dem>10) dem = 1;
          lcd_trangthai();
+         random = rand();
+         while(random>=0 && random<=100)
+         {
          lcd_command(0xd4);
-         printf(lcd_data, "SO RANDOM: %lu", rand()%100);
+         printf(lcd_data,"SO RANDOM: %lu ",random);
+         }
          while(input(pin_e1)==0);
       }
    }
@@ -178,8 +194,12 @@ void nutnhan()
          dem--;
          if(dem < 1) dem = 10;
          lcd_trangthai();
+         random = rand();
+         while(random>=0 && random<=100)
+         {
          lcd_command(0xd4);
-         printf(lcd_data, "SO RANDOM: %lu", rand()%100);
+         printf(lcd_data,"SO RANDOM: %lu ",random);
+         }
          while(input(pin_e2)==0);
       }
    }
@@ -200,8 +220,9 @@ void main()
    lcd_data("MSSV: 21151309");
    lcd_command(0x94);
    lcd_data("KHONG CO TRANG THAI");
+   random = rand();
    lcd_command(0xd4);
-   printf(lcd_data, "SO RANDOM: %lu", rand()%100);
+   printf(lcd_data,"SO RANDOM: %lu ",random);
    while(true)
    {  
       nutnhan();
@@ -224,5 +245,8 @@ void main()
       if(dem==9)  ttrn(); // tat trong ra
       
       if(dem==10) zichzac(); // zich zac
+//!      random = rand();
+//!      lcd_command(0xd4);
+//!      printf(lcd_data,"SO RANDOM: %lu ",random);
    }
 }

@@ -11,12 +11,12 @@ Type=4
 1=led7doantructiep.c
 
 [defines]
-buildcount=22
+buildcount=93
 
 [ProjectLog]
-Days=1
+Days=2
 D1=11-10-2023
-D1_L=6
+D1_L=17
 D1_L1=[40344]Stopped Editing.
 D1_L2=[40344]Started Editing.
 D1_L3=[42037]Stopped Editing.
@@ -27,11 +27,33 @@ TotalDebug=0
 D1_E=27
 D1_D=0
 D1_L6=[42350]Project Closed.
+D1_L7=[77411]Project Opened.
+D1_L8=[77562]Started Editing.
+D1_L9=[79416]Stopped Editing.
+D1_L10=[79589]Started Editing.
+D1_L11=[80060]Stopped Editing.
+D1_L12=[80495]Started Editing.
+D1_L13=[83194]Stopped Editing.
+D1_L14=[83281]Started Editing.
+D1_L15=[83612]Stopped Editing.
+D1_L16=[85087]Started Editing.
+D1_L17=[85455]Stopped Editing.
+D2=12-10-2023
+D2_L=4
+D2_L1=[5067]Started Editing.
+D2_L2=[6095]Stopped Editing.
+D2_L3=[6143]Started Editing.
+D2_L4=[8384]Stopped Editing.
 
 [Opened Files]
 1=led7doantructiep.c
-t1=1
-Count=1
+t1=189
+Count=2
+2=tv_lcd.c
+t2=1
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=led7doantructiep (main)

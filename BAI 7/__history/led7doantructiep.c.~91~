@@ -8,7 +8,7 @@ unsigned int32 y,n;
 #define lcd_rw pin_c6
 #define lcd_e pin_c7
 #define output_lcd output_d
-#include <tv_lcd.c>
+#include<tv_lcd.c>
 #include<stdlib.h>
 void st()
 {
@@ -126,7 +126,6 @@ void zichzac()
       if(input(pin_e1)==0||input(pin_e2)==0) break;
    }
 }
-
 void lcd_trangthai()
 {  
       lcd_setup();
@@ -145,7 +144,7 @@ void lcd_trangthai()
       
       if(dem==5)  lcd_data("TAT DAN SANG PHAI"); // tat dan sang phai
       
-      if(dem==6)  lcd_data("SANG TRONG RA");; // sang trong ra
+      if(dem==6)  lcd_data("SANG TRONG RA"); // sang trong ra
       
       if(dem==7)  lcd_data("SANG NGOAI VAO"); // sang ngoai vao
       
@@ -153,7 +152,7 @@ void lcd_trangthai()
      
       if(dem==9)  lcd_data("TAT TRONG RA"); // tat trong ra
       
-      if(dem==10) lcd_data("ZICH ZAC"); // zich zac
+      if(dem==10) lcd_data("ZICH ZAC");; // zich zac
 }
 void nutnhan()
 {
@@ -176,7 +175,7 @@ void nutnhan()
       if(input(pin_e2)==0)
       {
          dem--;
-         if(dem < 1) dem = 10;
+         if(dem < 1) dem = 10; 
          lcd_trangthai();
          lcd_command(0xd4);
          printf(lcd_data, "SO RANDOM: %lu", rand()%100);

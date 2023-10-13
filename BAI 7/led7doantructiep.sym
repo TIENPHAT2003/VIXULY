@@ -3,51 +3,90 @@
 015     CCP_1
 015     CCP_1_LOW
 016     CCP_1_HIGH
-01B     CCP_2_LOW
 01B     CCP_2
+01B     CCP_2_LOW
 01C     CCP_2_HIGH
 020     i
 021     dem
 022-025 y
 026-029 n
 02A     @TRIS_C
-02B     @delay_ms1.P1
-02B     st.@SCRATCH1
-02B     stsp.@SCRATCH1
-02B     spst.@SCRATCH1
-02B     tpst.@SCRATCH1
-02B     ttsp.@SCRATCH1
-02B     strn.@SCRATCH1
-02B     snvt.@SCRATCH1
-02B     tnvt.@SCRATCH1
-02B     ttrn.@SCRATCH1
-02B     zichzac.@SCRATCH1
-02B     nutnhan.@SCRATCH1
-02C     st.@SCRATCH2
-02C     stsp.@SCRATCH2
-02C     spst.@SCRATCH2
-02C     tpst.@SCRATCH2
-02C     ttsp.@SCRATCH2
-02C     strn.@SCRATCH2
-02C     snvt.@SCRATCH2
-02C     tnvt.@SCRATCH2
-02C     ttrn.@SCRATCH2
-02C     zichzac.@SCRATCH2
-02D     stsp.@SCRATCH3
-02D     spst.@SCRATCH3
-02D     tpst.@SCRATCH3
-02D     ttsp.@SCRATCH3
-02D     zichzac.@SCRATCH3
-02E     stsp.@SCRATCH4
-02E     spst.@SCRATCH4
-02E     tpst.@SCRATCH4
-02E     ttsp.@SCRATCH4
-02E     zichzac.@SCRATCH4
-02F     stsp.@SCRATCH5
-02F     spst.@SCRATCH5
-02F     tpst.@SCRATCH5
-02F     ttsp.@SCRATCH5
-02F     zichzac.@SCRATCH5
+02B-02C strtok.save
+02D-030 _Randseed
+031-032 @sprintf_string
+033-036 @MUL3232.P1
+033     lcd_command.a
+033     @delay_ms1.P1
+033     rand.@SCRATCH1
+033     st.@SCRATCH1
+033     stsp.@SCRATCH1
+033     spst.@SCRATCH1
+033     tpst.@SCRATCH1
+033     ttsp.@SCRATCH1
+033     strn.@SCRATCH1
+033     snvt.@SCRATCH1
+033     tnvt.@SCRATCH1
+033     ttrn.@SCRATCH1
+033     zichzac.@SCRATCH1
+033     @PSTRINGC7_714.@SCRATCH1
+033     nutnhan.@SCRATCH1
+033     MAIN.@SCRATCH1
+034     rand.@SCRATCH2
+034     st.@SCRATCH2
+034     stsp.@SCRATCH2
+034     spst.@SCRATCH2
+034     tpst.@SCRATCH2
+034     ttsp.@SCRATCH2
+034     strn.@SCRATCH2
+034     snvt.@SCRATCH2
+034     tnvt.@SCRATCH2
+034     ttrn.@SCRATCH2
+034     zichzac.@SCRATCH2
+034     @PSTRINGC7_714.@SCRATCH2
+034     nutnhan.@SCRATCH2
+034     MAIN.@SCRATCH2
+035-036 @PRINTF_LU_714.P1
+035     @PSTRINGCN7_714.P2
+035     rand.@SCRATCH3
+035     stsp.@SCRATCH3
+035     spst.@SCRATCH3
+035     tpst.@SCRATCH3
+035     ttsp.@SCRATCH3
+035     zichzac.@SCRATCH3
+035     @PSTRINGC7_714.@SCRATCH3
+036-037 @DIV1616.P1
+036     rand.@SCRATCH4
+036     stsp.@SCRATCH4
+036     spst.@SCRATCH4
+036     tpst.@SCRATCH4
+036     ttsp.@SCRATCH4
+036     zichzac.@SCRATCH4
+036     @PSTRINGC7_714.@SCRATCH4
+036     @PSTRINGCN7_714.@SCRATCH1
+037-03A @MUL3232.P1
+037     stsp.@SCRATCH5
+037     spst.@SCRATCH5
+037     tpst.@SCRATCH5
+037     ttsp.@SCRATCH5
+037     zichzac.@SCRATCH5
+037     @PSTRINGCN7_714.@SCRATCH2
+037     @PRINTF_LU_714.@SCRATCH1
+038-039 @DIV1616.P1
+038     @PSTRINGCN7_714.@SCRATCH3
+038     @PRINTF_LU_714.@SCRATCH2
+039     @PSTRINGCN7_714.@SCRATCH4
+039     @PRINTF_LU_714.@SCRATCH3
+03A     @DIV1616.@SCRATCH1
+03A     @PRINTF_LU_714.@SCRATCH4
+03B     @MUL3232.@SCRATCH1
+03B     @PRINTF_LU_714.@SCRATCH5
+03C     @MUL3232.@SCRATCH2
+03C     @PRINTF_LU_714.@SCRATCH6
+03D     @MUL3232.@SCRATCH3
+03D     @PRINTF_LU_714.@SCRATCH7
+03E     lcd_data.a
+03E     @MUL3232.@SCRATCH4
+03F     @MUL3232.@SCRATCH5
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -55,37 +94,71 @@
 07A     @SCRATCH
 107.6   C1OUT
 108.6   C2OUT
-10D-10E @WRITE_PROGRAM_MEMORY8.P1
-10D-10E @READ_PROGRAM_MEMORY8.P2
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
-000004  @delay_ms1
-000018  nutnhan
-000051  st
-00007C  stsp
-0000AD  spst
-0000DE  tpst
-000114  ttsp
-00014A  strn
-00018A  snvt
-0001CA  tnvt
-00020D  ttrn
-000250  zichzac
-000281  MAIN
-000281  @cinit1
-00029C  @cinit2
+000004  @const999.call
+00000F  @const1004.call
+000017  @const1005.call
+00001C  @const1006.call
+000026  @const1007.call
+000030  @const1008.call
+000039  @const1009.call
+000042  @const1010.call
+000049  @const1011.call
+000051  @const1012.call
+000058  @const1013.call
+00005F  @const1014.call
+000064  @const1016.call
+00006C  @const1021.call
+000074  @const1025.call
+00007F  @const1026.call
+000087  @const1027.call
+000091  @const1028.call
+000099  lcd_command
+0000BB  @delay_ms1
+0000CF  lcd_setup
+0000DF  lcd_data
+000101  @PSTRINGC7_714
+000157  @DIV1616
+00017C  rand
+00018C  @MUL3232
+0001E2  @PSTRINGCN7_714
+000239  @PRINTF_LU_714
+00029C  lcd_trangthai
+000321  nutnhan
+0003A6  st
+0003D1  stsp
+000402  spst
+000433  tpst
+000469  ttsp
+00049F  strn
+0004DF  snvt
+00051F  tnvt
+000562  ttrn
+0005A5  zichzac
+0005D6  MAIN
+0005D6  @cinit1
+0005F3  @cinit2
+0135  StrtoulGO
+0135  StrtolGO
 
 Project Directory:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\
 
 Project Files:
-    led7doantructiep.c                                      [11-Oct-23 11:45  CRC=0C552120]
+    led7doantructiep.c                                      [12-Oct-23 02:14  CRC=E8B49F98]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
-    tv_lcd.c                                                [11-Oct-23 10:58  CRC=85F53194]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [30-Jun-20 14:21  CRC=452E14BB]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [30-Jan-19 12:26  CRC=897CEC6C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [06-Apr-20 08:43  CRC=B1605627]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Jan-08 15:55  CRC=2D1F019F]
 
-Source signature=BE4E962D
+Source signature=EF023D9D
 Program memory checksum=0000
-Hex file CRC=B4FF
+Hex file CRC=9042
 
 Units:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\led7doantructiep (main)

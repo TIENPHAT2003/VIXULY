@@ -165,8 +165,6 @@ void nutnhan()
          dem++;
          if(dem>10) dem = 1;
          lcd_trangthai();
-         lcd_command(0xd4);
-         printf(lcd_data, "SO RANDOM: %lu", rand()%100);
          while(input(pin_e1)==0);
       }
    }
@@ -178,8 +176,6 @@ void nutnhan()
          dem--;
          if(dem < 1) dem = 10;
          lcd_trangthai();
-         lcd_command(0xd4);
-         printf(lcd_data, "SO RANDOM: %lu", rand()%100);
          while(input(pin_e2)==0);
       }
    }
@@ -200,8 +196,6 @@ void main()
    lcd_data("MSSV: 21151309");
    lcd_command(0x94);
    lcd_data("KHONG CO TRANG THAI");
-   lcd_command(0xd4);
-   printf(lcd_data, "SO RANDOM: %lu", rand()%100);
    while(true)
    {  
       nutnhan();
