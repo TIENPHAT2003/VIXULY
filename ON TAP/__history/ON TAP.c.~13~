@@ -1,0 +1,46 @@
+#include<16f887.h>
+#fuses intrc_io
+#use delay(clock=8M)
+
+#define lcd_rs pin_c5
+#define lcd_rw pin_c6
+#define lcd_e pin_c7
+#define output_lcd output_b
+#include<tv_lcd.c>
+
+signed int8 i;
+unsigned int32 y;
+void sangdan()
+{
+   for(i=12;i>=0;i--)
+   {
+      y=0xffffff>>i;
+      output_a(y);
+      output_c(y>>8);
+      delay_ms(50);
+   }
+   
+}
+void main()
+{
+   set_tris_a(0);
+   set_tris_c(0);
+   set_tris_b(0);
+   set_tris_d(0);
+   set_tris_e(0xff);
+   lcd_setup();
+   lcd_command(0x80);
+   lcd_data(0x7e);
+   lcd_command(0x80+1);
+   lcd_data("Sang Dan 12 LED");
+   lcd_command(0xc0+1);
+   lcd_data("Tat Dan 12 LED");
+   lcd_command(0x94+1);
+   lcd_data("Sang Dich 12 LED");
+   lcd_command(0xd4+1);
+   lcd_data("Tat Dich 12 LED");
+   while(true)
+   {
+      
+   }
+}

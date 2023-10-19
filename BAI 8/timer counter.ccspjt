@@ -1,0 +1,96 @@
+[PROJECT]
+Target=timer counter.hex
+Processor_Text=PIC16F887
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=timer counter.c
+[timer counter.c]
+Type=4
+[mru-list]
+1=timer counter.c
+
+[defines]
+buildcount=98
+
+[Opened Files]
+1=BAI2.c
+t1=1
+2=BAI2.c
+t2=1
+Count=1
+
+[ProjectLog]
+Days=4
+D1=16-10-2023
+D1_L=17
+D1_L1=[53389]Stopped Editing.
+D1_L2=[53925]Started Editing.
+D1_L3=[54564]Stopped Editing.
+TotalEdit=110
+TotalDebug=0
+D1_E=55
+D1_D=0
+D1_L4=[54567]Project Closed.
+D1_L5=[54968]Project Opened.
+D1_L6=[54988]Started Editing.
+D1_L7=[55767]Stopped Editing.
+D1_L8=[55783]Started Editing.
+D1_L9=[56196]Stopped Editing.
+D1_L10=[56197]Started Editing.
+D1_L11=[57250]Stopped Editing.
+D1_L12=[57988]Started Editing.
+D1_L13=[58324]Stopped Editing.
+D1_L14=[58785]Started Editing.
+D1_L15=[59113]Stopped Editing.
+D1_L16=[60575]Started Editing.
+D1_L17=[61606]Stopped Editing.
+D2=17-10-2023
+D2_L=3
+D2_L1=[83409]Project Opened.
+D2_L2=[83545]Started Editing.
+D2_L3=[84014]Stopped Editing.
+D3=18-10-2023
+D3_L=28
+D3_L1=[35226]Project Opened.
+D3_L2=[35226]Project Closed.
+D3_L3=[36636]Project Opened.
+D3_L4=[37557]Started Editing.
+D3_L5=[38098]Stopped Editing.
+D3_L6=[38906]Started Editing.
+D3_L7=[39346]Stopped Editing.
+D3_L8=[39382]Started Editing.
+D3_L9=[40060]Stopped Editing.
+D3_L10=[40189]Started Editing.
+D3_L11=[40360]Stopped Editing.
+D3_E=51
+D3_D=0
+D3_L12=[40360]Project Closed.
+D3_L13=[62648]Project Opened.
+D3_L14=[62658]Started Editing.
+D3_L15=[63806]Stopped Editing.
+D3_L16=[63976]Started Editing.
+D3_L17=[64642]Stopped Editing.
+D3_L18=[65183]Project Closed.
+D3_L19=[65220]Project Opened.
+D3_L20=[65254]Started Editing.
+D3_L21=[65556]Stopped Editing.
+D3_L22=[65586]Started Editing.
+D3_L23=[67661]Stopped Editing.
+D3_L24=[67661]Project Closed.
+D3_L25=[69493]Project Opened.
+D3_L26=[69538]Project Closed.
+D3_L27=[86198]Project Opened.
+D3_L28=[86240]Started Editing.
+D4=19-10-2023
+D4_L=2
+D4_L1=[21]Stopped Editing.
+D4_E=4
+D4_D=0
+D4_L2=[21]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=timer counter (main)

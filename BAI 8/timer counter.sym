@@ -1,0 +1,105 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+00C.0   T1IF
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     kq
+022     bdn
+023     gio
+024     phut
+025     giay
+026     bdn1
+027     tt
+028-029 @sprintf_string
+02A     @PRINTF_U_710.P1
+02A     lcd_command.a
+02A     @delay_ms1.P1
+02A     @PSTRINGCN7_710.P2
+02A     nutnhan.@SCRATCH1
+02A     demdongho.@SCRATCH1
+02A     @PSTRINGC7_710.@SCRATCH1
+02B     @PRINTF_U_710.P1
+02B     @PSTRINGCN7_710.@SCRATCH1
+02B     @PSTRINGC7_710.@SCRATCH2
+02C     @DIV88.P1
+02C     @PSTRINGCN7_710.@SCRATCH2
+02C     @PSTRINGC7_710.@SCRATCH3
+02D     @DIV88.P1
+02D     @PSTRINGCN7_710.@SCRATCH3
+02D     @PSTRINGC7_710.@SCRATCH4
+02E     lcd_data.a
+02E     @PSTRINGCN7_710.@SCRATCH4
+02E     @DIV88.@SCRATCH1
+02F     @delay_us1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const722.call
+00000D  @const732.call
+000014  @const734.call
+000021  @const738.call
+00002C  @const743.call
+000034  @delay_us1
+000043  lcd_command
+000064  @delay_ms1
+000078  lcd_setup
+00008A  lcd_data
+0000AB  @PSTRINGC7_710
+000103  @PSTRINGCN7_710
+00015A  @DIV88
+00016F  @PRINTF_U_710
+0001A4  nutnhan
+0001DB  demsp
+0001FB  demdongho
+000285  MAIN
+000285  @cinit1
+0002A5  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 8\
+
+Project Files:
+    timer counter.c                                         [18-Oct-23 18:45  CRC=72794AAC]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+
+Source signature=2472BFB9
+Program memory checksum=0000
+Hex file CRC=1E8C
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 8\timer counter (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   timer counter.xsym
+    Errors:      timer counter.err
+    Ext Symbols: timer counter.esym
+    INHX8:       timer counter.hex
+    Symbols:     timer counter.sym
+    List:        timer counter.lst
+    Debug/COFF:  timer counter.cof
+    Project:     timer counter.ccspjt
+    Call Tree:   timer counter.tre
+    Statistics:  timer counter.STA

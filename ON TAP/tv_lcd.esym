@@ -1,0 +1,10 @@
+F N "lcd_command" 0 1 ""
+D G "__PCM__" 0 10 ""5.112""
+D G "__DEVICE__" 0 10 ""
+D G "__DATE__" 0 10 ""16-Oct-23""
+D G "__TIME__" 0 10 ""19:02:18""
+D G "_UNICODE" 0 10 ""?""
+D G "__EVAL" 0 10 ""?""
+F N "lcd_command" 0 1 ""
+V L "a" 0 1 "int8" `36 
+F G "lcd_command" 0 2 "void(int8 a)" `35 

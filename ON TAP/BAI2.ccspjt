@@ -1,0 +1,53 @@
+[PROJECT]
+Target=BAI2.hex
+Processor_Text=PIC16F887
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=BAI2.c
+[BAI2.c]
+Type=4
+[mru-list]
+1=BAI2.c
+
+[defines]
+buildcount=36
+
+[ProjectLog]
+Days=1
+D1=19-10-2023
+D1_L=15
+D1_L1=[60]Started Editing.
+D1_L2=[1881]Stopped Editing.
+TotalEdit=74
+TotalDebug=0
+D1_E=74
+D1_D=0
+D1_L3=[1881]Project Closed.
+D1_L4=[32023]Project Opened.
+D1_L5=[32179]Started Editing.
+D1_L6=[32464]Stopped Editing.
+D1_L7=[32970]Started Editing.
+D1_L8=[33896]Stopped Editing.
+D1_L9=[34461]Started Editing.
+D1_L10=[36229]Stopped Editing.
+D1_L11=[37892]Started Editing.
+D1_L12=[38287]Stopped Editing.
+D1_L13=[38301]Started Editing.
+D1_L14=[38380]Stopped Editing.
+D1_L15=[38380]Project Closed.
+
+[Opened Files]
+1=BAI2.c
+t1=5
+Count=3
+2=tv_lcd.c
+t2=1
+3=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c
+t3=41
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI2 (main)

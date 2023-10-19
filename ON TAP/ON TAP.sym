@@ -1,0 +1,142 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     i
+022     tt
+023-026 y
+027-02A speed
+02B-02C @sprintf_string
+02D     lcd_command.a
+02D     @PSTRINGC7_710.@SCRATCH1
+02D     nutnhan.@SCRATCH1
+02D     MAIN.@SCRATCH1
+02E     @PSTRINGC7_710.@SCRATCH2
+02E     nutnhan.@SCRATCH2
+02E     MAIN.@SCRATCH2
+02F-030 sangdich.speed
+02F-030 tatdan.speed
+02F-030 tatdich.speed
+02F-030 sangdan.speed
+02F     @PSTRINGC7_710.@SCRATCH3
+02F     nutnhan.@SCRATCH3
+02F     MAIN.@SCRATCH3
+030     lcd_data.a
+030     @PSTRINGC7_710.@SCRATCH4
+030     nutnhan.@SCRATCH4
+030     MAIN.@SCRATCH4
+031     sangdan.@SCRATCH1
+031     tatdan.@SCRATCH1
+031     sangdich.@SCRATCH1
+031     tatdich.@SCRATCH1
+031     nutnhan.@SCRATCH5
+031     MAIN.@SCRATCH5
+032     @delay_ms1.P1
+032     sangdan.@SCRATCH2
+032     tatdan.@SCRATCH2
+032     sangdich.@SCRATCH2
+032     tatdich.@SCRATCH2
+032     nutnhan.@SCRATCH6
+032     MAIN.@SCRATCH6
+033     sangdan.@SCRATCH3
+033     tatdan.@SCRATCH3
+033     sangdich.@SCRATCH3
+033     tatdich.@SCRATCH3
+033     nutnhan.@SCRATCH7
+033     MAIN.@SCRATCH7
+034     sangdan.@SCRATCH4
+034     tatdan.@SCRATCH4
+034     sangdich.@SCRATCH4
+034     tatdich.@SCRATCH4
+034     nutnhan.@SCRATCH8
+034     MAIN.@SCRATCH8
+035-038 @DIV3232.P1
+035     sangdan.@SCRATCH5
+035     tatdan.@SCRATCH5
+035     sangdich.@SCRATCH5
+035     tatdich.@SCRATCH5
+035     nutnhan.@SCRATCH9
+035     MAIN.@SCRATCH9
+039-03C @DIV3232.P1
+03D     @DIV3232.@SCRATCH1
+03E     @DIV3232.@SCRATCH2
+03F     @DIV3232.@SCRATCH3
+040     @DIV3232.@SCRATCH4
+041     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000008  ma7doan.data
+000012  @const729.call
+00001A  @const734.call
+000022  @const735.call
+00002B  @const736.call
+000033  @const744.call
+00003B  @const745.call
+000043  @const746.call
+00004C  @const747.call
+000054  lcd_command
+000076  @delay_ms1
+00008A  lcd_setup
+00009A  lcd_data
+0000BC  @PSTRINGC7_710
+000112  @DIV3232
+000161  hienthi
+0001B1  nutnhan
+00025B  sangdan
+00029E  tatdan
+0002E6  sangdich
+000328  tatdich
+00036F  @cinit1
+00036F  MAIN
+000392  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\
+
+Project Files:
+    ON TAP.c                                                [16-Oct-23 20:26  CRC=6D8A1937]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+
+Source signature=1F838E44
+Program memory checksum=0000
+Hex file CRC=7386
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\ON TAP (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   ON TAP.xsym
+    Errors:      ON TAP.err
+    Ext Symbols: ON TAP.esym
+    INHX8:       ON TAP.hex
+    Symbols:     ON TAP.sym
+    List:        ON TAP.lst
+    Debug/COFF:  ON TAP.cof
+    Project:     ON TAP.ccspjt
+    Call Tree:   ON TAP.tre
+    Statistics:  ON TAP.STA

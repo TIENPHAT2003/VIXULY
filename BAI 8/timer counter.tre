@@ -1,0 +1,74 @@
+ÀÄdefaultuser0
+   ÀÄMAIN  0/97  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄlcd_setup  0/18  Ram=0
+      ³  ÃÄlcd_command  0/33  Ram=1
+      ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_command  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_command  0/33  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_710  0/88  Ram=4
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+      ³  ÀÄlcd_data  0/33  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_command  0/33  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGCN7_710  0/87  Ram=5
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_data  0/33  Ram=1
+      ³     ÀÄ*
+      ÃÄ@PRINTF_U_710  0/53  Ram=2
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_data  0/33  Ram=1
+      ³     ÀÄ*
+      ÃÄnutnhan  0/55  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_command  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_710  0/87  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_U_710  0/53  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_data  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_data  0/33  Ram=1
+      ³     ÀÄ*
+      ÃÄdemsp  0/32  Ram=0
+      ³  ÃÄlcd_command  0/33  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_710  0/87  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_U_710  0/53  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_data  0/33  Ram=1
+      ³     ÀÄ*
+      ÀÄdemdongho  0/138  Ram=1
+         ÃÄlcd_command  0/33  Ram=1
+         ³  ÀÄ*
+         ÃÄ@PSTRINGCN7_710  0/87  Ram=5
+         ³  ÀÄ*
+         ÃÄ@PRINTF_U_710  0/53  Ram=2
+         ³  ÀÄ*
+         ÃÄlcd_data  0/33  Ram=1
+         ³  ÀÄ*
+         ÃÄ@PRINTF_U_710  0/53  Ram=2
+         ³  ÀÄ*
+         ÃÄlcd_data  0/33  Ram=1
+         ³  ÀÄ*
+         ÀÄ@PRINTF_U_710  0/53  Ram=2
+            ÀÄ*

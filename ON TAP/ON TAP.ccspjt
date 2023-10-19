@@ -1,0 +1,30 @@
+[PROJECT]
+Target=ON TAP.hex
+Processor_Text=PIC16F887
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=ON TAP.c
+[ON TAP.c]
+Type=4
+[mru-list]
+1=ON TAP.c
+
+[defines]
+buildcount=57
+
+[ProjectLog]
+Days=1
+D1=16-10-2023
+D1_L=3
+D1_L1=[68566]Started Editing.
+D1_L2=[69036]Stopped Editing.
+D1_L3=[69117]Started Editing.
+
+[Opened Files]
+1=ON TAP.c
+t1=141
+Count=1
+[Units]
+Count=1
+1=ON TAP (main)

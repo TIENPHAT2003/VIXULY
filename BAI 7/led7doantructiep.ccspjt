@@ -11,10 +11,10 @@ Type=4
 1=led7doantructiep.c
 
 [defines]
-buildcount=93
+buildcount=100
 
 [ProjectLog]
-Days=2
+Days=4
 D1=11-10-2023
 D1_L=17
 D1_L1=[40344]Stopped Editing.
@@ -22,7 +22,7 @@ D1_L2=[40344]Started Editing.
 D1_L3=[42037]Stopped Editing.
 D1_L4=[42170]Started Editing.
 D1_L5=[42350]Stopped Editing.
-TotalEdit=27
+TotalEdit=35
 TotalDebug=0
 D1_E=27
 D1_D=0
@@ -44,13 +44,33 @@ D2_L1=[5067]Started Editing.
 D2_L2=[6095]Stopped Editing.
 D2_L3=[6143]Started Editing.
 D2_L4=[8384]Stopped Editing.
+D3=16-10-2023
+D3_L=4
+D3_L1=[54567]Project Opened.
+D3_L2=[54583]Started Editing.
+D3_L3=[54954]Stopped Editing.
+D3_E=7
+D3_D=0
+D3_L4=[54954]Project Closed.
+D4=18-10-2023
+D4_L=6
+D4_L1=[35225]Project Opened.
+D4_L2=[35226]Project Closed.
+D4_L3=[35226]Project Opened.
+D4_L4=[36586]Started Editing.
+D4_L5=[36628]Stopped Editing.
+D4_E=1
+D4_D=0
+D4_L6=[36628]Project Closed.
 
 [Opened Files]
-1=led7doantructiep.c
-t1=189
-Count=2
-2=tv_lcd.c
-t2=1
+1=..\BAI 8\timer counter.c
+t1=14
+Count=1
+2=led7doantructiep.c
+t2=129
+3=tv_lcd.c
+t3=1
 
 [fileformats]
 forcecoff=0
