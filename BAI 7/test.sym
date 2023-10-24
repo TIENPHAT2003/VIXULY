@@ -1,0 +1,77 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-022 @sprintf_string
+023     @delay_ms1.P1
+023     lcd_command.a
+023     @PSTRINGC7_710.@SCRATCH1
+024     @PSTRINGC7_710.@SCRATCH2
+025     @PSTRINGC7_710.@SCRATCH3
+026     lcd_data.a
+026     @PSTRINGC7_710.@SCRATCH4
+027     @delay_us1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const716.call
+00000F  @const721.call
+000012  @const722.call
+00001C  @delay_us1
+00002B  lcd_command
+00004C  @delay_ms1
+000060  lcd_setup
+000072  lcd_data
+000093  @PSTRINGC7_710
+0000E9  MAIN
+0000E9  @cinit1
+0000FF  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\
+
+Project Files:
+    test.c                                                  [20-Oct-23 09:31  CRC=97E1352D]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+
+Source signature=49DAAA3A
+Program memory checksum=0000
+Hex file CRC=DBA1
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 7\test (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   test.xsym
+    Errors:      test.err
+    Ext Symbols: test.esym
+    INHX8:       test.hex
+    Symbols:     test.sym
+    List:        test.lst
+    Debug/COFF:  test.cof
+    Project:     test.ccspjt
+    Call Tree:   test.tre
+    Statistics:  test.STA

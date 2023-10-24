@@ -1,9 +1,9 @@
-D G "__PCM__" 0 66 ""5.112""
-D G "__DEVICE__" 0 66 "887"
-D G "__DATE__" 0 66 ""19-Oct-23""
-D G "__TIME__" 0 66 ""10:38:39""
-D G "_UNICODE" 0 66 ""?""
-D G "__EVAL" 0 66 ""?"" "Standard Header file for the PIC16F887 device ////////////////"
+D G "__PCM__" 0 164 ""5.112""
+D G "__DEVICE__" 0 164 "887"
+D G "__DATE__" 0 164 ""24-Oct-23""
+D G "__TIME__" 0 164 ""14:36:12""
+D G "_UNICODE" 0 164 ""?""
+D G "__EVAL" 0 164 ""?"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 3 6 "FUNCTION"
 F N "set_tris_a" 1 39 ""
 V L "value" 1 39 "int8" `55 
@@ -1320,18 +1320,31 @@ V L "on" 3 443 "int8" `749
 F G "lcd_cursor_on" 3 444 "void(int8 on)" `748 
 C L "lcd_cursor_on" 3 2 1 "FUNCTION"
 C L "lcd_cursor_on" 3 2 1 "FUNCTION"
-V G "ma7doan" 0 14 "[1]" `751 
-V G "kq" 0 15 "int8" `753 
-V G "ttdem" 0 15 "int8" `754 
-V G "gio" 0 15 "int8" `755 
-V G "phut" 0 15 "int8" `756 
-V G "giay" 0 15 "int8" `757 
-F N "quetled" 0 17 ""
-F G "quetled" 0 18 "void()" `758 
-F N "demsp" 0 28 ""
-F G "demsp" 0 29 "void()" `762 
-F N "MAIN" 0 46 ""
-F G "MAIN" 0 47 "void()" `769 
+V G "ma7doan" 0 16 "[1]" `752 
+V G "kq" 0 17 "int8" `754 
+V G "ttdem" 0 17 "int8" `755 
+V G "gio" 0 17 "int8" `756 
+V G "phut" 0 17 "int8" `757 
+V G "giay" 0 17 "int8" `758 
+V G "mp" 0 18 "int8" `759 
+V G "dem" 0 18 "int8" `760 
+V G "flag" 0 18 "int8" `761 
+V G "gioihan" 0 18 "int8" `762 
+V G "bdn" 0 18 "int8" `763 
+V G "ns" 0 19 "int32" `764 
+F N "matranphim" 0 20 ""
+F G "matranphim" 0 21 "void()" `765 
+F N "datgioihan" 0 64 ""
+F G "datgioihan" 0 65 "void()" `766 
+F N "quetled" 0 77 ""
+F G "quetled" 0 78 "void()" `779 
+F N "demsp" 0 109 ""
+V L "datgioihan" 0 109 "int8" `781 
+F G "demsp" 0 110 "void(int8 datgioihan)" `780 
+F N "nangsuat" 0 127 ""
+F G "nangsuat" 0 128 "void()" `783 
+F N "MAIN" 0 139 ""
+F G "MAIN" 0 140 "void()" `790 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0

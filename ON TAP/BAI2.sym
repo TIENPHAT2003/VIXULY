@@ -1,7 +1,8 @@
-004-005 @WRITE_PROGRAM_MEMORY8.P1
-004-005 @READ_PROGRAM_MEMORY8.P2
-015     CCP_1
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+00B.2   t0if
 015     CCP_1_LOW
+015     CCP_1
 016     CCP_1_HIGH
 01B     CCP_2_LOW
 01B     CCP_2
@@ -12,36 +13,65 @@
 023     gio
 024     phut
 025     giay
-026     @PRINTF_U_738.P1
-026     lcd_init.i
-026     @PSTRINGCN7_738.P1
-026     quetled.@SCRATCH1
-026     demsp.@SCRATCH1
-027     @PRINTF_U_738.P1
-027-02A lcd_init.LCD_INIT_STRING
-027     @PSTRINGCN7_738.@SCRATCH1
-028     @DIV88.P1
-028     @PSTRINGCN7_738.@SCRATCH2
-029     @DIV88.P1
-029     @PSTRINGCN7_738.@SCRATCH3
-02A     lcd_putc.c
-02A     @DIV88.@SCRATCH1
-02A     @PSTRINGCN7_738.@SCRATCH4
-02B     @delay_ms1.P1
-02B     lcd_gotoxy.x
-02B     lcd_init.@SCRATCH1
-02C     lcd_gotoxy.y
-02D     lcd_gotoxy.address
-02E     lcd_gotoxy.@SCRATCH1
-02F     lcd_send_byte.address
-030     lcd_send_byte.n
-031     lcd_read_byte.low
-031     lcd_send_byte.@SCRATCH1
-032     lcd_send_nibble.n
-032     lcd_read_byte.high
-033     lcd_read_nibble.n
-033     lcd_read_byte.@SCRATCH1
-034     lcd_read_nibble.@SCRATCH1
+026     mp
+027     dem
+028     flag
+029     gioihan
+02A     bdn
+02B-02E ns
+02F     demsp.datgioihan
+02F-032 @PRINTF_L32U_738.P1
+02F     key_4x4.mp
+02F     lcd_init.i
+02F     @MUL88.P1
+02F     quetled.@SCRATCH1
+02F     nangsuat.@SCRATCH1
+030     key_4x4.cot
+030-033 lcd_init.LCD_INIT_STRING
+030     @MUL88.P1
+030     @PSTRINGCN7_738.P2
+030     @PRINTF_U_738.P3
+030     demsp.@SCRATCH1
+031     @PRINTF_U_738.P1
+031     key_4x4.@SCRATCH1
+031     @PSTRINGCN7_738.@SCRATCH1
+032     @DIV88.P1
+032     @PSTRINGCN7_738.@SCRATCH2
+033     @DIV88.P1
+033     @PSTRINGCN7_738.@SCRATCH3
+033     @PRINTF_L32U_738.@SCRATCH1
+034     lcd_init.@SCRATCH1
+034     @PSTRINGCN7_738.@SCRATCH4
+034     @DIV88.@SCRATCH1
+034     @PRINTF_L32U_738.@SCRATCH2
+035     @PRINTF_L32U_738.@SCRATCH3
+036     @PRINTF_L32U_738.@SCRATCH4
+037     @PRINTF_L32U_738.@SCRATCH5
+038     @PRINTF_L32U_738.@SCRATCH6
+039     @PRINTF_L32U_738.@SCRATCH7
+03A     @PRINTF_L32U_738.@SCRATCH8
+03B     lcd_putc.c
+03B-03E @DIV3232.P1
+03C     lcd_gotoxy.x
+03C     @delay_ms1.P1
+03D     lcd_gotoxy.y
+03E     lcd_gotoxy.address
+03F-042 @DIV3232.P1
+03F     lcd_gotoxy.@SCRATCH1
+040     lcd_send_byte.address
+041     lcd_send_byte.n
+042     lcd_read_byte.low
+042     lcd_send_byte.@SCRATCH1
+043     lcd_read_byte.high
+043     lcd_send_nibble.n
+043     @DIV3232.@SCRATCH1
+044     lcd_read_nibble.n
+044     lcd_read_byte.@SCRATCH1
+044     @DIV3232.@SCRATCH2
+045     lcd_read_nibble.@SCRATCH1
+045     @DIV3232.@SCRATCH3
+046     @DIV3232.@SCRATCH4
+047     @DIV3232.@SCRATCH5
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -53,38 +83,50 @@
 10D-10E @WRITE_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
-000004  ma7doan.call
-000008  ma7doan.data
-000012  @const763.call
-00001C  @delay_ms1
-000030  lcd_send_nibble
-000064  lcd_read_nibble
-00009D  lcd_send_byte
-0000A5  lcd_read_byte
-000109  lcd_init
-00015F  lcd_gotoxy
-000171  lcd_putc
-00019D  @PSTRINGCN7_738
-0001F4  @DIV88
-000209  demsp
-00022E  @PRINTF_U_738
-000293  quetled
-000355  @cinit1
-000355  MAIN
-000378  @cinit2
+000004  mq.call
+000008  mq.data
+00000C  ma7doan.call
+000010  ma7doan.data
+00001A  @const770.call
+000022  @const782.call
+00002C  @const784.call
+000037  @const793.call
+00003F  @delay_ms1
+000053  lcd_send_nibble
+000087  lcd_read_nibble
+0000C0  lcd_send_byte
+0000C8  lcd_read_byte
+00012C  lcd_init
+000182  lcd_gotoxy
+000194  lcd_putc
+0001C0  @PSTRINGCN7_738
+000217  @DIV88
+00022C  @PRINTF_U_738
+000261  quetled
+00033F  matranphim
+00033F  key_4x4
+0003CE  @MUL88
+0003F3  datgioihan
+00041A  demsp
+000472  @DIV3232
+0004C1  nangsuat
+0004FD  @PRINTF_L32U_738
+000560  @cinit1
+000560  MAIN
+000588  @cinit2
 
 Project Directory:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\
 
 Project Files:
-    BAI2.c                                                  [19-Oct-23 10:38  CRC=8D43481A]
+    BAI2.c                                                  [24-Oct-23 14:36  CRC=E98D8E50]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
     tvkey4x4.c                                              [18-Oct-23 23:35  CRC=1D022093]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c [22-Feb-16 10:05  CRC=D1A6378A]
 
-Source signature=F3A0E9A6
+Source signature=4FEB2FDC
 Program memory checksum=0000
-Hex file CRC=38BE
+Hex file CRC=464C
 
 Units:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\BAI2 (main)

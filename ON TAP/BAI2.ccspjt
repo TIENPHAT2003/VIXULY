@@ -11,17 +11,17 @@ Type=4
 1=BAI2.c
 
 [defines]
-buildcount=36
+buildcount=108
 
 [ProjectLog]
-Days=1
+Days=4
 D1=19-10-2023
-D1_L=15
+D1_L=21
 D1_L1=[60]Started Editing.
 D1_L2=[1881]Stopped Editing.
-TotalEdit=74
+TotalEdit=122
 TotalDebug=0
-D1_E=74
+D1_E=108
 D1_D=0
 D1_L3=[1881]Project Closed.
 D1_L4=[32023]Project Opened.
@@ -36,15 +36,51 @@ D1_L12=[38287]Stopped Editing.
 D1_L13=[38301]Started Editing.
 D1_L14=[38380]Stopped Editing.
 D1_L15=[38380]Project Closed.
+D1_L16=[73168]Project Opened.
+D1_L17=[73818]Started Editing.
+D1_L18=[74157]Stopped Editing.
+D1_L19=[74657]Started Editing.
+D1_L20=[76636]Stopped Editing.
+D1_L21=[76636]Project Closed.
+D2=20-10-2023
+D2_L=10
+D2_L1=[33122]Project Opened.
+D2_L2=[33129]Project Closed.
+D2_L3=[55977]Project Opened.
+D2_L4=[56006]Started Editing.
+D2_L5=[56317]Stopped Editing.
+D2_L6=[58102]Started Editing.
+D2_L7=[58516]Stopped Editing.
+D2_L8=[58561]Started Editing.
+D2_L9=[59263]Stopped Editing.
+D2_E=14
+D2_D=0
+D2_L10=[59263]Project Closed.
+D3=22-10-2023
+D3_L=2
+D3_L1=[46910]Project Opened.
+D3_L2=[49745]Project Closed.
+D4=24-10-2023
+D4_L=8
+D4_L1=[47861]Project Opened.
+D4_L2=[47908]Started Editing.
+D4_L3=[48239]Stopped Editing.
+D4_L4=[48594]Started Editing.
+D4_L5=[49332]Stopped Editing.
+D4_L6=[49860]Started Editing.
+D4_L7=[51568]Stopped Editing.
+D4_L8=[51820]Started Editing.
 
 [Opened Files]
 1=BAI2.c
-t1=5
-Count=3
-2=tv_lcd.c
-t2=1
+t1=127
+Count=2
+2=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c
+t2=340
 3=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c
 t3=41
+4=tvkey4x4.c
+t4=1
 
 [fileformats]
 forcecoff=0
