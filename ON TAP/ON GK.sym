@@ -1,0 +1,107 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+00C.0   t1if
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-024 y
+025     ttdem
+026     kq
+027     bdn
+028     gio
+029     phut
+02A     giay
+02B-02C @sprintf_string
+02D     @PSTRINGCN7_710.P1
+02D     @PRINTF_U_710.P2
+02D     sangled.led
+02D     @delay_ms1.P1
+02D     lcd_command.a
+02D     @PSTRINGC7_710.@SCRATCH1
+02D     donghoso.@SCRATCH1
+02D     MAIN.@SCRATCH1
+02E     @PRINTF_U_710.P1
+02E     @PSTRINGC7_710.@SCRATCH2
+02E     sangled.@SCRATCH1
+02E     @PSTRINGCN7_710.@SCRATCH1
+02F     @DIV88.P1
+02F     @PSTRINGC7_710.@SCRATCH3
+02F     sangled.@SCRATCH2
+02F     @PSTRINGCN7_710.@SCRATCH2
+030     @DIV88.P1
+030     @PSTRINGC7_710.@SCRATCH4
+030     sangled.@SCRATCH3
+030     @PSTRINGCN7_710.@SCRATCH3
+031     lcd_data.a
+031     sangled.@SCRATCH4
+031     @PSTRINGCN7_710.@SCRATCH4
+031     @DIV88.@SCRATCH1
+032     sangled.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const722.call
+00000C  @const730.call
+000013  lcd_command
+000035  @delay_ms1
+000049  lcd_data
+00006B  lcd_setup
+00006B  hienthi
+000082  @PSTRINGC7_710
+0000D7  @PSTRINGCN7_710
+00012E  @DIV88
+000143  @PRINTF_U_710
+000178  demsp
+0001AC  sangled
+0001CF  donghoso
+000218  MAIN
+000218  @cinit1
+00023A  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\
+
+Project Files:
+    ON GK.c                                                 [26-Oct-23 16:31  CRC=653FA9EF]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+
+Source signature=17391EFC
+Program memory checksum=0000
+Hex file CRC=09CC
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\ON GK (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   ON GK.xsym
+    Errors:      ON GK.err
+    Ext Symbols: ON GK.esym
+    INHX8:       ON GK.hex
+    Symbols:     ON GK.sym
+    List:        ON GK.lst
+    Debug/COFF:  ON GK.cof
+    Project:     ON GK.ccspjt
+    Call Tree:   ON GK.tre
+    Statistics:  ON GK.STA

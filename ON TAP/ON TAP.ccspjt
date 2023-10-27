@@ -11,20 +11,41 @@ Type=4
 1=ON TAP.c
 
 [defines]
-buildcount=57
+buildcount=59
 
 [ProjectLog]
-Days=1
+Days=2
 D1=16-10-2023
 D1_L=3
 D1_L1=[68566]Started Editing.
 D1_L2=[69036]Stopped Editing.
 D1_L3=[69117]Started Editing.
+D2=26-10-2023
+D2_L=8
+D2_L1=[45483]Project Opened.
+D2_L2=[45523]Started Editing.
+D2_L3=[45827]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[46603]Project Closed.
+D2_L5=[53805]Project Opened.
+D2_L6=[53805]Project Closed.
+D2_L7=[53806]Project Opened.
+D2_L8=[53819]Project Closed.
 
 [Opened Files]
-1=ON TAP.c
-t1=141
-Count=1
+1=..\BAI ON TAP\BAI 2.c
+t1=105
+Count=3
+2=BAI2.c
+t2=103
+3=ON TAP.c
+t3=103
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=ON TAP (main)

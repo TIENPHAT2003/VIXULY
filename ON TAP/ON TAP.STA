@@ -1,9 +1,9 @@
 
-ROM used:   1121/8192 (14%)
-            1121/8192 (14%) including unused fragments
+ROM used:   1046/8192 (13%)
+            1046/8192 (13%) including unused fragments
 
-            1.1 Average locations per line
-            8.2 Average locations per statement
+            1.0 Average locations per line
+            8.1 Average locations per statement
 
 RAM used:   27/368 (7%) at main() level
             39/368 (11%) worst case
@@ -13,54 +13,50 @@ Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-  162   120  88  ON TAP.c
+  163   112  87  ON TAP.c
   810     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h
-   25    17  12  tv_lcd.c
+   25    17  13  tv_lcd.c
 ----- -----
-  997   137 Total
+  998   129 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
 0     20   2    1             @delay_ms1
 0     34   3    1    119  1.3  lcd_command
 0     34   3    1    119  1.3  lcd_data
-0     16   1    0     86  1.3  lcd_setup
-0     14   1    0    294  5.5  @const718
+0     16   2    0     86  1.3  lcd_setup
+0     14   1    0             @const718
 0     67   6    7    316  5.6  sangdan
-0     72   6    7    329  6.1  tatdan
+0     72   7    7    329  6.1  tatdan
 0     66   6    7    316  5.6  sangdich
-0     71   6    7    329  6.1  tatdich
-0     80   7    0    581  2.8  hienthi
-0      8   1    0    494  2.3  @const729
+0     71   7    7    329  6.1  tatdich
+0     80   8    0    581  2.8  hienthi
+0      8   1    0             @const729
 0     86   8    4             @PSTRINGC7_710
 0      8   1    0             @const734
 0      9   1    0             @const735
-0      8   1    0    489  5.2  @const736
-0    170  15    9    860  7.2  nutnhan
-0     79   7   13    835  4.8  @DIV3232
-0    242  22    9    898  5.3  MAIN
-0      8   1    0             @const744
-0      8   1    0             @const745
-0      9   1    0             @const746
-0      8   1    0             @const747
+0      8   1    0             @const736
+0    170  16    9    860  7.2  nutnhan
+0     79   8   13             @DIV3232
+0    200  19    9    589  4.8  MAIN
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               14
-    Statements              137
-    Comments                135
-    Volume (V)              9947
-    Difficulty (D)          59.4
-    Effort to implement (E) 590490
-    Time to implement (T)   9 hours, 7 minutes
-    Est Delivered Bugs (B)  2
-    Cyclomatic Complexity   37
-    Maintainability (MI)    50
+    Functions               10
+    Statements              129
+    Comments                144
+    Volume (V)              5724
+    Difficulty (D)          40.8
+    Effort to implement (E) 233598
+    Time to implement (T)   3 hours, 36 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   25
+    Maintainability (MI)    76
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF  1117  927  
+00004-007FF  1042  1002  
 00800-00FFF     0  2048  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  

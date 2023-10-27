@@ -1,10 +1,10 @@
 004-005 @WRITE_PROGRAM_MEMORY8.P1
 004-005 @READ_PROGRAM_MEMORY8.P2
-015     CCP_1_LOW
 015     CCP_1
+015     CCP_1_LOW
 016     CCP_1_HIGH
-01B     CCP_2
 01B     CCP_2_LOW
+01B     CCP_2
 01C     CCP_2_HIGH
 020     @TRIS_C
 021     i
@@ -19,10 +19,10 @@
 02E     @PSTRINGC7_710.@SCRATCH2
 02E     nutnhan.@SCRATCH2
 02E     MAIN.@SCRATCH2
-02F-030 sangdich.speed
-02F-030 tatdan.speed
 02F-030 tatdich.speed
 02F-030 sangdan.speed
+02F-030 tatdan.speed
+02F-030 sangdich.speed
 02F     @PSTRINGC7_710.@SCRATCH3
 02F     nutnhan.@SCRATCH3
 02F     MAIN.@SCRATCH3
@@ -85,37 +85,33 @@ ROM Allocation:
 00001A  @const734.call
 000022  @const735.call
 00002B  @const736.call
-000033  @const744.call
-00003B  @const745.call
-000043  @const746.call
-00004C  @const747.call
-000054  lcd_command
-000076  @delay_ms1
-00008A  lcd_setup
-00009A  lcd_data
-0000BC  @PSTRINGC7_710
-000112  @DIV3232
-000161  hienthi
-0001B1  nutnhan
-00025B  sangdan
-00029E  tatdan
-0002E6  sangdich
-000328  tatdich
-00036F  @cinit1
-00036F  MAIN
-000392  @cinit2
+000033  lcd_command
+000055  @delay_ms1
+000069  lcd_setup
+000079  @DIV3232
+0000C8  lcd_data
+0000EA  @PSTRINGC7_710
+000140  hienthi
+000190  nutnhan
+00023A  sangdan
+00027D  tatdan
+0002C5  sangdich
+000307  tatdich
+00034E  @cinit1
+00034E  MAIN
+000371  @cinit2
 
 Project Directory:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\
 
 Project Files:
-    ON TAP.c                                                [16-Oct-23 20:26  CRC=6D8A1937]
+    ON TAP.c                                                [26-Oct-23 12:38  CRC=C2ECD76A]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
     tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
 
-Source signature=1F838E44
+Source signature=74E64C77
 Program memory checksum=0000
-Hex file CRC=7386
+Hex file CRC=40EC
 
 Units:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\ON TAP\ON TAP (main)

@@ -1,0 +1,38 @@
+[PROJECT]
+Target=BAI 1.hex
+Processor_Text=PIC16F887
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=BAI 1.c
+[BAI 1.c]
+Type=4
+[mru-list]
+1=BAI 1.c
+
+[defines]
+buildcount=27
+
+[Opened Files]
+1=BAI 1.c
+t1=11
+Count=1
+[Units]
+Count=1
+1=BAI 1 (main)
+
+[ProjectLog]
+Days=1
+D1=25-10-2023
+D1_L=4
+D1_L1=[4736]Stopped Editing.
+TotalEdit=38
+TotalDebug=0
+D1_E=38
+D1_D=0
+D1_L2=[4736]Project Closed.
+D1_L3=[4956]Project Opened.
+D1_L4=[4964]Project Closed.
+
+[fileformats]
+forcecoff=0

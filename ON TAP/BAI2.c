@@ -14,9 +14,9 @@
 
 #bit t0if=0x0b.2
 const unsigned int8 ma7doan[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
-unsigned int8 kq=0, ttdem =1, gio=0,phut=0,giay=0;
+unsigned int8 kq=0, ttdem =1, gio=0,phut=0,giay=50;
 unsigned int8 mp,dem,flag=0,gioihan=20,bdn=0;
-unsigned int32 ns=0;
+unsigned int32 ns=0, tong=0;
 void matranphim()
 {
    mp=key_4x4();
@@ -109,7 +109,10 @@ void quetled()
 void demsp(unsigned int8 datgioihan)
 {
    kq=get_timer1();
-   if(kq>datgioihan) set_timer1(1);
+   if(kq>datgioihan){
+      set_timer1(1);
+      tong+=datgioihan;
+   }
    lcd_gotoxy(1,1);
    printf(lcd_putc,"SAN PHAM: %02u CAI",kq);
    if(input(pin_c3) == 0)
@@ -126,15 +129,11 @@ void demsp(unsigned int8 datgioihan)
 }
 void nangsuat()
 {
-   if(gio==0){
-      if(phut>0)
-      ns=kq/phut;
-   }
-   else{
-      ns=kq/(gio*60+phut);
+   if(giay==59){
+      ns=(tong+kq)/1;
    }
    lcd_gotoxy(21,1);
-   printf(lcd_putc,"NANG SUAT: %02lu CAI",ns);
+   printf(lcd_putc,"NANG SUAT: %03lu CAI",ns);
 }
 void main()
 {  
@@ -152,11 +151,12 @@ void main()
    printf(lcd_putc,"GIOI HAN: %02u", gioihan);
    while(true)
    {
+      nangsuat();
       quetled();
       matranphim();
       datgioihan();
       demsp(gioihan);
-      nangsuat();
+      
    }
 }
 

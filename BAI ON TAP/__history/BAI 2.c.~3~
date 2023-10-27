@@ -1,0 +1,13 @@
+#include<16f887.h>
+#fuses intrc_io
+#use delay(clock=8M)
+
+#include<LCD.c>
+
+void main()
+{
+   while(true)
+   {
+      
+   }
+}

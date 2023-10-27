@@ -140,18 +140,19 @@ void main()
    output_c(0);
    lcd_setup();
    lcd_command(0x80);
-   lcd_data(0x7e);
-   lcd_command(0x80+1);
-   lcd_data("Sang Dan 12 LED");
-   lcd_command(0xc0+1);
-   lcd_data("Tat Dan 12 LED");
-   lcd_command(0x94+1);
-   lcd_data("Sang Dich 12 LED");
-   lcd_command(0xd4+1);
-   lcd_data("Tat Dich 12 LED");
+//!   lcd_data(0x7e);
+//!   lcd_command(0x80+1);
+//!   lcd_data("Sang Dan 12 LED");
+//!   lcd_command(0xc0+1);
+//!   lcd_data("Tat Dan 12 LED");
+//!   lcd_command(0x94+1);
+//!   lcd_data("Sang Dich 12 LED");
+//!   lcd_command(0xd4+1);
+//!   lcd_data("Tat Dich 12 LED");
    output_d(ma7doan[speed/100%10]);
    while(true)
    {
+      hienthi();
       nutnhan();
       if(tt == 1) sangdan(1000-speed);
       if(tt == 2) tatdan(1000-speed);

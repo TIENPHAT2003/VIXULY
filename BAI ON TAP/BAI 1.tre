@@ -1,0 +1,74 @@
+ÀÄdefaultuser0
+   ÀÄMAIN  0/173  Ram=9
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄlcd_setup  0/16  Ram=0
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_command  0/34  Ram=1
+      ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ÀÄlcd_data  0/34  Ram=1
+      ÃÄlcd_command  0/34  Ram=1
+      ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄlcd_command  0/34  Ram=1
+      ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄlcd_command  0/34  Ram=1
+      ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄlcd_command  0/34  Ram=1
+      ÃÄlcd_data  0/34  Ram=1
+      ÃÄ@DIV3232  0/79  Ram=13
+      ÃÄ@DIV3232  0/79  Ram=13
+      ÃÄ@const714  0/14  Ram=0
+      ÃÄnutnhan  0/170  Ram=9
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄhienthi  0/376  Ram=2
+      ³  ³  ÃÄlcd_setup  0/16  Ram=0
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ³  ÃÄsangdan  (Inline)  Ram=7
+      ³  ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ³  ÃÄtatdan  (Inline)  Ram=7
+      ³  ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ³  ÃÄsangdich  (Inline)  Ram=7
+      ³  ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ³  ÀÄtatdich  (Inline)  Ram=7
+      ³  ³     ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³     ÀÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄhienthi  0/376  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄ@DIV3232  0/79  Ram=13
+      ³  ÃÄ@DIV3232  0/79  Ram=13
+      ³  ÀÄ@const714  0/14  Ram=0
+      ÀÄhienthi  0/376  Ram=2
+         ÀÄ*

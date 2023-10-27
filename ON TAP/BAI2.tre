@@ -1,5 +1,5 @@
 ÀÄdefaultuser0
-   ÀÄMAIN  0/103  Ram=0
+   ÀÄMAIN  0/108  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@cinit2  (Inline)  Ram=0
       ÃÄlcd_init  0/86  Ram=6
@@ -41,6 +41,18 @@
       ³  ³  ÀÄ*
       ³  ÀÄlcd_putc  0/44  Ram=1
       ³     ÀÄ*
+      ÃÄnangsuat  0/157  Ram=4
+      ³  ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_738  0/87  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_L32U_738  (Inline)  Ram=12
+      ³  ³  ÃÄ@DIV3232  0/79  Ram=13
+      ³  ³  ÃÄlcd_putc  0/44  Ram=1
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄ@DIV3232  0/79  Ram=13
+      ³  ÀÄ@PSTRINGCN7_738  0/87  Ram=5
+      ³     ÀÄ*
       ÃÄquetled  0/222  Ram=1
       ³  ÃÄ@DIV88  0/21  Ram=3
       ³  ÃÄ@DIV88  0/21  Ram=3
@@ -68,36 +80,21 @@
       ÃÄmatranphim  0/143  Ram=0
       ³  ÀÄkey_4x4  (Inline)  Ram=3
       ³     ÀÄ@const709  0/8  Ram=0
-      ÃÄdatgioihan  0/39  Ram=0
-      ³  ÃÄ@MUL88  0/37  Ram=2
+      ÃÄdatgioihan  0/74  Ram=0
+      ³  ÃÄ@MUL88  (Inline)  Ram=2
       ³  ÃÄlcd_gotoxy  0/18  Ram=4
       ³  ³  ÀÄ*
       ³  ÃÄ@PSTRINGCN7_738  0/87  Ram=5
       ³  ³  ÀÄ*
       ³  ÀÄ@PRINTF_U_738  0/53  Ram=2
       ³     ÀÄ*
-      ÃÄdemsp  0/88  Ram=2
-      ³  ÃÄlcd_gotoxy  0/18  Ram=4
-      ³  ³  ÀÄ*
-      ³  ÃÄ@PSTRINGCN7_738  0/87  Ram=5
-      ³  ³  ÀÄ*
-      ³  ÃÄ@PRINTF_U_738  0/53  Ram=2
-      ³  ³  ÀÄ*
-      ³  ÃÄ@PSTRINGCN7_738  0/87  Ram=5
-      ³  ³  ÀÄ*
-      ³  ÀÄ@delay_ms1  0/20  Ram=1
-      ÀÄnangsuat  0/159  Ram=1
-         ÃÄ@DIV88  0/21  Ram=3
-         ÃÄ@MUL88  0/37  Ram=2
-         ÃÄ@DIV88  0/21  Ram=3
+      ÀÄdemsp  0/102  Ram=2
          ÃÄlcd_gotoxy  0/18  Ram=4
          ³  ÀÄ*
          ÃÄ@PSTRINGCN7_738  0/87  Ram=5
          ³  ÀÄ*
-         ÃÄ@PRINTF_L32U_738  (Inline)  Ram=12
-         ³  ÃÄ@DIV3232  0/79  Ram=13
-         ³  ÃÄlcd_putc  0/44  Ram=1
-         ³  ³  ÀÄ*
-         ³  ÀÄ@DIV3232  0/79  Ram=13
-         ÀÄ@PSTRINGCN7_738  0/87  Ram=5
-            ÀÄ*
+         ÃÄ@PRINTF_U_738  0/53  Ram=2
+         ³  ÀÄ*
+         ÃÄ@PSTRINGCN7_738  0/87  Ram=5
+         ³  ÀÄ*
+         ÀÄ@delay_ms1  0/20  Ram=1

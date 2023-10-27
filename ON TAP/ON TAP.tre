@@ -1,5 +1,5 @@
 ÀÄdefaultuser0
-   ÀÄMAIN  0/242  Ram=9
+   ÀÄMAIN  0/200  Ram=9
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@cinit2  (Inline)  Ram=0
       ÃÄlcd_setup  0/16  Ram=0
@@ -9,48 +9,37 @@
       ³  ÃÄlcd_command  0/34  Ram=1
       ³  ÀÄ@delay_ms1  0/20  Ram=1
       ÃÄlcd_command  0/34  Ram=1
-      ÃÄlcd_data  0/34  Ram=1
-      ÃÄlcd_command  0/34  Ram=1
-      ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ÃÄlcd_data  0/34  Ram=1
-      ³  ÀÄlcd_data  0/34  Ram=1
-      ÃÄlcd_command  0/34  Ram=1
-      ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ÀÄ*
-      ÃÄlcd_command  0/34  Ram=1
-      ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ÀÄ*
-      ÃÄlcd_command  0/34  Ram=1
-      ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ÀÄ*
       ÃÄ@DIV3232  0/79  Ram=13
       ÃÄ@DIV3232  0/79  Ram=13
       ÃÄ@const718  0/14  Ram=0
+      ÃÄhienthi  0/80  Ram=0
+      ³  ÃÄlcd_setup  0/16  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ³  ÀÄlcd_data  0/34  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÃÄlcd_data  0/34  Ram=1
+      ³  ÃÄlcd_command  0/34  Ram=1
+      ³  ÀÄlcd_data  0/34  Ram=1
       ÃÄnutnhan  0/170  Ram=9
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÃÄhienthi  0/80  Ram=0
-      ³  ³  ÃÄlcd_setup  0/16  Ram=0
-      ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄ@PSTRINGC7_710  0/86  Ram=4
-      ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄlcd_data  0/34  Ram=1
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄlcd_data  0/34  Ram=1
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÃÄlcd_data  0/34  Ram=1
-      ³  ³  ÃÄlcd_command  0/34  Ram=1
-      ³  ³  ÀÄlcd_data  0/34  Ram=1
+      ³  ³  ÀÄ*
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÃÄhienthi  0/80  Ram=0
       ³  ³  ÀÄ*

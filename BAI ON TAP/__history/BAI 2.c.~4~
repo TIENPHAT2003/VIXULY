@@ -1,0 +1,28 @@
+#include<16f887.h>
+#fuses intrc_io
+#use delay(clock=8M)
+
+#define LCD_ENABLE_PIN  PIN_E2                                    
+#define LCD_RS_PIN      PIN_E0                                 
+#define LCD_RW_PIN      PIN_E1                                  
+#define LCD_DATA4       PIN_C4                                 
+#define LCD_DATA5       PIN_c5                                   
+#define LCD_DATA6       PIN_c6                                    
+#define LCD_DATA7       PIN_c7
+#include<LCD.c>
+
+void quetled(){
+   
+}
+void main()
+{
+   set_tris_a(0);
+   set_tris_b(0);
+   set_tris_e(0);
+   set_tris_c(0x0f);
+   set_tris_d(0xff);
+   while(true)
+   {
+      
+   }
+}

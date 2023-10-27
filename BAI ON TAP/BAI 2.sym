@@ -1,0 +1,135 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+00B.2   t0if
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     gio
+022     phut
+023     giay
+024     bdn
+025     kq
+026     mp
+027     dem
+028     flag
+029     ttdem
+02A     gioihan
+02B     tong
+02C     ns
+02D     lcd_init.i
+02D     demsp.gh
+02D     key_4x4.mp
+02D     quetled.@SCRATCH1
+02E     @PSTRINGCN7_732.P1
+02E     @MUL88.P2
+02E     @PRINTF_U_732.P3
+02E     key_4x4.cot
+02E-031 lcd_init.LCD_INIT_STRING
+02E     demsp.@SCRATCH1
+02F     @MUL88.P1
+02F     @PRINTF_U_732.P2
+02F     key_4x4.@SCRATCH1
+02F     @PSTRINGCN7_732.@SCRATCH1
+030     @DIV88.P1
+030     @PSTRINGCN7_732.@SCRATCH2
+031     @DIV88.P1
+031     @PSTRINGCN7_732.@SCRATCH3
+032     lcd_putc.c
+032     lcd_init.@SCRATCH1
+032     @PSTRINGCN7_732.@SCRATCH4
+032     @DIV88.@SCRATCH1
+033     lcd_gotoxy.x
+033     @delay_ms1.P1
+034     lcd_gotoxy.y
+035     lcd_gotoxy.address
+036     lcd_gotoxy.@SCRATCH1
+037     lcd_send_byte.address
+038     lcd_send_byte.n
+039     lcd_read_byte.low
+039     lcd_send_byte.@SCRATCH1
+03A     lcd_send_nibble.n
+03A     lcd_read_byte.high
+03B     lcd_read_nibble.n
+03B     lcd_read_byte.@SCRATCH1
+03C     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  mq.call
+000008  mq.data
+00000C  ma7doan.call
+000010  ma7doan.data
+00001A  @const771.call
+000022  @const783.call
+00002C  @const785.call
+000036  @const789.call
+000040  @delay_ms1
+000054  lcd_send_nibble
+000088  lcd_read_nibble
+0000C1  lcd_send_byte
+0000C9  lcd_read_byte
+00012D  lcd_init
+000183  lcd_gotoxy
+000195  lcd_putc
+0001C1  @PSTRINGCN7_732
+000218  @DIV88
+00022D  @PRINTF_U_732
+000262  key_4x4
+000262  matranphim
+0002F1  quetled
+0003D1  demsp
+0003D1  datgioihan
+0003D7  @MUL88
+000472  nangsuat
+000499  MAIN
+000499  @cinit1
+0004BE  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI ON TAP\
+
+Project Files:
+    BAI 2.c                                                 [25-Oct-23 02:43  CRC=DE927512]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c [22-Feb-16 10:05  CRC=D1A6378A]
+    tvkey4x4.c                                              [18-Oct-23 23:35  CRC=1D022093]
+
+Source signature=904BFFA7
+Program memory checksum=0000
+Hex file CRC=8B25
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI ON TAP\BAI 2 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI 2.xsym
+    Errors:      BAI 2.err
+    Ext Symbols: BAI 2.esym
+    INHX8:       BAI 2.hex
+    Symbols:     BAI 2.sym
+    List:        BAI 2.lst
+    Debug/COFF:  BAI 2.cof
+    Project:     BAI 2.ccspjt
+    Call Tree:   BAI 2.tre
+    Statistics:  BAI 2.STA
