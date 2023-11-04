@@ -1,0 +1,129 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+00B.2   t0if
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021.0   ttdem
+022     kq
+023     bdn
+024     giay
+025     phut
+026     gio
+027-028 kqadc1
+029-02A kqadc2
+02B-02C @sprintf_string
+02D-02E @PRINTF_LU_710.P1
+02D     @PRINTF_U_710.P2
+02D     @PSTRINGCN7_710.P3
+02D     lcd_command.a
+02D     @delay_ms1.P1
+02D-030 @SFTOI.P2
+02D     demdongho.@SCRATCH1
+02D     lm35.@SCRATCH1
+02D     MAIN.@SCRATCH1
+02D     @PSTRINGC7_710.@SCRATCH1
+02E     @PRINTF_U_710.P1
+02E-02F @ITOF.P2
+02E-031 @DIVFF.P3
+02E     @PSTRINGCN7_710.@SCRATCH1
+02E     @PSTRINGC7_710.@SCRATCH2
+02F     @DIV88.P1
+02F     @PSTRINGCN7_710.@SCRATCH2
+02F     @PRINTF_LU_710.@SCRATCH1
+02F     @PSTRINGC7_710.@SCRATCH3
+030     @DIV88.P1
+030     @PSTRINGCN7_710.@SCRATCH3
+030     @PRINTF_LU_710.@SCRATCH2
+030     @PSTRINGC7_710.@SCRATCH4
+031     @PSTRINGCN7_710.@SCRATCH4
+031     @DIV88.@SCRATCH1
+031     @PRINTF_LU_710.@SCRATCH3
+032-035 @DIVFF.P1
+032     @PRINTF_LU_710.@SCRATCH4
+033     @PRINTF_LU_710.@SCRATCH5
+034     @PRINTF_LU_710.@SCRATCH6
+035     @PRINTF_LU_710.@SCRATCH7
+036     lcd_data.a
+036     @DIVFF.@SCRATCH1
+037     @delay_us1.P1
+037     @DIVFF.@SCRATCH2
+038     @DIVFF.@SCRATCH3
+039     @DIVFF.@SCRATCH4
+03A     @DIVFF.@SCRATCH5
+03B     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const723.call
+00000F  @const733.call
+00001C  @const749.call
+000021  @const754.call
+000026  @const755.call
+00002B  @delay_us1
+00003A  lcd_command
+00005B  @delay_ms1
+00006F  lcd_setup
+000081  lcd_data
+0000A2  @PSTRINGC7_710
+0000F8  @PSTRINGCN7_710
+00014F  @DIV88
+000164  @PRINTF_U_710
+000199  demsp
+0001CB  demdongho
+00020C  @ITOF
+000229  @DIVFF
+0002F3  @SFTOI
+000312  @PRINTF_LU_710
+000375  lm35
+0003FE  MAIN
+0003FE  @cinit1
+000418  @cinit2
+
+Project Directory:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 9\
+
+Project Files:
+    BAI 9.c                                                 [04-Nov-23 15:35  CRC=1D94ED27]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
+
+Source signature=CF8E6234
+Program memory checksum=0000
+Hex file CRC=4D87
+
+Units:
+    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 9\BAI 9 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI 9.xsym
+    Errors:      BAI 9.err
+    Ext Symbols: BAI 9.esym
+    INHX8:       BAI 9.hex
+    Symbols:     BAI 9.sym
+    List:        BAI 9.lst
+    Debug/COFF:  BAI 9.cof
+    Project:     BAI 9.ccspjt
+    Call Tree:   BAI 9.tre
+    Statistics:  BAI 9.STA

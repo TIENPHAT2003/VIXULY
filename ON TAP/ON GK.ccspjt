@@ -40,8 +40,10 @@ D1_L11=[84455]Stopped Editing.
 D2=27-10-2023
 D2_E=1
 D2_D=0
-D2_L=1
+D2_L=3
 D2_L1=[1824]Project Closed.
+D2_L2=[78364]Project Opened.
+D2_L3=[78367]Project Closed.
 [Units]
 Count=1
 1=ON GK (main)
