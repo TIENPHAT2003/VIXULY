@@ -1,9 +1,10 @@
-D G "__PCM__" 0 0 ""5.112""
-D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""08-Nov-23""
-D G "__TIME__" 0 0 ""22:17:10""
-D G "_UNICODE" 0 0 ""?""
-D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC16F887 device ////////////////"
+F N "ngatadc" 0 111 ""
+D G "__PCM__" 0 117 ""5.112""
+D G "__DEVICE__" 0 117 "887"
+D G "__DATE__" 0 117 ""10-Nov-23""
+D G "__TIME__" 0 117 ""14:44:05""
+D G "_UNICODE" 0 117 ""?""
+D G "__EVAL" 0 117 ""?"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 3 6 "FUNCTION"
 F N "set_tris_a" 1 39 ""
 V L "value" 1 39 "int8" `55 
@@ -461,9 +462,9 @@ F N "read_adc" 1 469 ""
 f G "read_adc" 1 469 "int16()" `206 
 F N "read_adc" 1 470 ""
 V L "mode" 1 470 "int8" `207 
-f G "read_adc" 1 470 "int16(int8 mode)" `206 
+f G "read_adc" 1 470 "int16(int8 mode,int32 pins)" `206 
 F N "adc_done" 1 471 ""
-F B "adc_done" 1 471 "int8(int8 mode)" `206  "Constants used for SETUP_ADC() are:"
+F B "adc_done" 1 471 "int8(int8 mode,int32 pins)" `206  "Constants used for SETUP_ADC() are:"
 D G "ADC_OFF" 1 473 "0" "ADC Off"
 D G "ADC_CLOCK_DIV_2" 1 474 "0x100"
 D G "ADC_CLOCK_DIV_8" 1 475 "0x40"
@@ -905,9 +906,9 @@ F B "i2c_transfer_in" 1 637 "int8(int8 stream,int8 address,*int8 rData,int8 rCou
 F N "spi_xfer" 1 640 ""
 F B "spi_xfer" 1 640 "int8()" `507 
 F N "spi_xfer" 1 641 ""
-f G "spi_xfer" 1 641 "int16()" `508 
+f G "spi_xfer" 1 641 "int16(int8 data)" `508 
 F N "spi_xfer" 1 642 ""
-f G "spi_xfer" 1 642 "int32()" `508 
+f G "spi_xfer" 1 642 "int32(int8 data)" `508 
 F N "spi_xfer" 1 643 ""
 V L "data" 1 643 "int8" `509 
 F B "spi_xfer" 1 643 "int8(int8 data)" `508 
@@ -987,18 +988,18 @@ F B "spi_prewrite" 1 662 "void(int8 ,int32 data)" `561
 F N "spi_xfer_in" 1 663 ""
 F B "spi_xfer_in" 1 663 "int8()" `564 
 F N "spi_xfer_in" 1 664 ""
-f G "spi_xfer_in" 1 664 "int16()" `565 
+f G "spi_xfer_in" 1 664 "int16(int8 bits)" `565 
 F N "spi_xfer_in" 1 665 ""
-f G "spi_xfer_in" 1 665 "int32()" `565 
+f G "spi_xfer_in" 1 665 "int32(int8 bits)" `565 
 F N "spi_xfer_in" 1 666 ""
 V L "bits" 1 666 "int8" `566 
 F B "spi_xfer_in" 1 666 "int8(int8 bits)" `565 
 F N "spi_xfer_in" 1 667 ""
 V L "bits" 1 667 "int8" `568 
-f G "spi_xfer_in" 1 667 "int16(int8 bits)" `567 
+f G "spi_xfer_in" 1 667 "int16(int8 bits,int8 bits)" `567 
 F N "spi_xfer_in" 1 668 ""
 V L "bits" 1 668 "int8" `568 
-f G "spi_xfer_in" 1 668 "int32(int8 bits)" `567 
+f G "spi_xfer_in" 1 668 "int32(int8 bits,int8 bits)" `567 
 F N "spi_xfer_in" 1 669 ""
 V L "stream" 1 669 "int8" `568 
 V L "bits" 1 669 "int8" `569 
@@ -1006,11 +1007,11 @@ F B "spi_xfer_in" 1 669 "int8(int8 stream,int8 bits)" `567
 F N "spi_xfer_in" 1 670 ""
 V L "stream" 1 670 "int8" `568 
 V L "bits" 1 670 "int8" `572 
-f G "spi_xfer_in" 1 670 "int16(int8 stream,int8 bits)" `570 
+f G "spi_xfer_in" 1 670 "int16(int8 stream,int8 bits,int16 count)" `570 
 F N "spi_xfer_in" 1 671 ""
 V L "stream" 1 671 "int8" `568 
 V L "bits" 1 671 "int8" `572 
-f G "spi_xfer_in" 1 671 "int32(int8 stream,int8 bits)" `570 
+f G "spi_xfer_in" 1 671 "int32(int8 stream,int8 bits,int16 count)" `570 
 F N "spi_transfer" 1 672 ""
 V L "wData" 1 672 "*int8" `571 
 V L "rData" 1 672 "*int8" `572 
@@ -1079,9 +1080,9 @@ F B "rtos_stats" 1 692 "void(int8 task,*int8 stat)" `613  "#use timer() Prototyp
 F N "get_ticks" 1 695 ""
 F B "get_ticks" 1 695 "int8()" `616 
 F N "get_ticks" 1 696 ""
-f G "get_ticks" 1 696 "int16()" `617 
+f G "get_ticks" 1 696 "int16(int8 stream)" `617 
 F N "get_ticks" 1 697 ""
-f G "get_ticks" 1 697 "int32()" `617 
+f G "get_ticks" 1 697 "int32(int8 stream)" `617 
 F N "get_ticks" 1 698 ""
 V L "stream" 1 698 "int8" `618 
 F B "get_ticks" 1 698 "int8(int8 stream)" `617 
@@ -1260,27 +1261,33 @@ V L "a" 2 10 "int8" `711
 F G "lcd_data" 2 11 "void(int8 a)" `710 
 F N "lcd_setup" 2 19 ""
 F G "lcd_setup" 2 20 "void()" `712 
-V G "kq" 0 14 "int8" `714 
-V G "bdn" 0 14 "int8" `715 
-V G "gio" 0 14 "int8" `716 
-V G "phut" 0 14 "int8" `717 
-V G "giay" 0 14 "int8" `718 
-V G "ttdem" 0 15 "int1" `719 
-V G "kqadc1" 0 16 "int16" `720 
-V G "kqadc2" 0 16 "int16" `721 
-F N "demsp" 0 17 ""
-F G "demsp" 0 17 "void()" `722 
-F N "demdongho" 0 24 ""
-F G "demdongho" 0 24 "void()" `732 
-F N "lm35" 0 46 ""
-F G "lm35" 0 46 "void()" `734 
-C L "lm35" 0 2 1 "FUNCTION"
-C L "lm35" 0 2 1 "FUNCTION"
-C L "lm35" 0 2 1 "FUNCTION"
-C L "lm35" 0 2 1 "FUNCTION"
-F N "MAIN" 0 62 ""
-F G "MAIN" 0 63 "void()" `746 
-C L "MAIN" 0 2 1 "FUNCTION"
+V G "kq" 0 12 "int8" `713 
+V G "bdn1" 0 12 "int8" `714 
+V G "giay1" 0 12 "int8" `715 
+V G "phut1" 0 12 "int8" `716 
+V G "gio1" 0 12 "int8" `717 
+V G "bdn2" 0 13 "int8" `718 
+V G "giay2" 0 13 "int8" `719 
+V G "phut2" 0 13 "int8" `720 
+V G "gio2" 0 13 "int8" `721 
+V G "kqadc1" 0 14 "int16" `722 
+V G "kqadc2" 0 14 "int16" `723 
+F N "demsp" 0 15 ""
+F G "demsp" 0 15 "void()" `724 
+F N "demtimer1" 0 21 ""
+F G "demtimer1" 0 22 "void()" `734 
+F N "demtimer2" 0 39 ""
+F G "demtimer2" 0 40 "void()" `736 
+F N "lm35" 0 57 ""
+F G "lm35" 0 58 "void()" `738 
+F N "MAIN" 0 74 ""
+F G "MAIN" 0 75 "void()" `743 
+F N "ngattimer1" 0 102 ""
+F G "ngattimer1" 0 102 "void()" `746 
+F N "ngattimer2" 0 107 ""
+F G "ngattimer2" 0 107 "void()" `747 
+F N "ngatadc" 0 111 ""
+F G "ngatadc" 0 112 "void()" `748 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0

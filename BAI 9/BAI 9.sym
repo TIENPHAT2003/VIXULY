@@ -8,12 +8,12 @@
 01B     CCP_2
 01C     CCP_2_HIGH
 020     @TRIS_C
-021.0   ttdem
-022     kq
-023     bdn
-024     giay
-025     phut
-026     gio
+021     kq
+022     bdn
+023     gio
+024     phut
+025     giay
+026.0   ttdem
 027-028 kqadc1
 029-02A kqadc2
 02B-02C @sprintf_string
@@ -88,21 +88,21 @@ ROM Allocation:
 0002F3  @SFTOI
 000312  @PRINTF_LU_710
 000375  lm35
-0003FE  MAIN
-0003FE  @cinit1
-000418  @cinit2
+0003F8  MAIN
+0003F8  @cinit1
+000412  @cinit2
 
 Project Directory:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 9\
 
 Project Files:
-    BAI 9.c                                                 [04-Nov-23 15:35  CRC=1D94ED27]
+    BAI 9.c                                                 [06-Nov-23 11:25  CRC=F2E8A3FB]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
     tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
 
-Source signature=CF8E6234
+Source signature=A4E21908
 Program memory checksum=0000
-Hex file CRC=4D87
+Hex file CRC=6118
 
 Units:
     C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 9\BAI 9 (main)

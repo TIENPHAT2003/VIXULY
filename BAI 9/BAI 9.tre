@@ -1,5 +1,5 @@
 ÀÄdefaultuser0
-   ÀÄMAIN  0/132  Ram=1
+   ÀÄMAIN  0/135  Ram=1
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@cinit2  (Inline)  Ram=0
       ÃÄlcd_setup  0/18  Ram=0
@@ -52,12 +52,7 @@
       ³  ³  ÀÄ*
       ³  ÀÄ@PRINTF_U_710  0/53  Ram=2
       ³     ÀÄ*
-      ÃÄlm35  0/137  Ram=1
-      ³  ÃÄ@delay_ms1  0/20  Ram=1
-      ³  ÃÄ@ITOF  0/29  Ram=2
-      ³  ÃÄ@DIVFF  0/202  Ram=14
-      ³  ÃÄ@SFTOI  0/31  Ram=4
-      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlm35  0/131  Ram=1
       ³  ÃÄ@ITOF  0/29  Ram=2
       ³  ÃÄ@DIVFF  0/202  Ram=14
       ³  ÃÄ@SFTOI  0/31  Ram=4
@@ -74,6 +69,9 @@
       ³  ³  ÀÄ*
       ³  ÃÄlcd_data  0/33  Ram=1
       ³  ³  ÀÄ*
+      ³  ÃÄ@ITOF  0/29  Ram=2
+      ³  ÃÄ@DIVFF  0/202  Ram=14
+      ³  ÃÄ@SFTOI  0/31  Ram=4
       ³  ÃÄlcd_command  0/33  Ram=1
       ³  ³  ÀÄ*
       ³  ÃÄ@PRINTF_LU_710  0/99  Ram=9

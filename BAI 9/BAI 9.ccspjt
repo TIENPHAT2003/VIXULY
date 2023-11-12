@@ -11,45 +11,32 @@ Type=4
 1=BAI 9.c
 
 [defines]
-buildcount=53
+buildcount=12
 
 [Opened Files]
 1=BAI 9.c
-t1=35
-Count=1
+t1=8
+Count=2
+2=..\..\code\codebwm.c
+t2=8
 
 [ProjectLog]
-Days=2
-D1=03-11-2023
-D1_L=6
-D1_L1=[53958]Stopped Editing.
-TotalEdit=70
+Days=3
+D1=06-11-2023
+D1_L=2
+D1_L1=[41269]Stopped Editing.
+TotalEdit=28
 TotalDebug=0
-D1_E=34
+D1_E=28
 D1_D=0
-D1_L2=[53958]Project Closed.
-D1_L3=[55217]Project Opened.
-D1_L4=[55227]Started Editing.
-D1_L5=[55484]Stopped Editing.
-D1_L6=[55484]Project Closed.
-D2=04-11-2023
-D2_L=14
-D2_L1=[51017]Project Opened.
-D2_L2=[51084]Started Editing.
-D2_L3=[52136]Stopped Editing.
-D2_L4=[52318]Started Editing.
-D2_L5=[52818]Stopped Editing.
-D2_L6=[52944]Started Editing.
-D2_L7=[53397]Stopped Editing.
-D2_L8=[53766]Started Editing.
-D2_L9=[54660]Stopped Editing.
-D2_L10=[55209]Started Editing.
-D2_L11=[55813]Stopped Editing.
-D2_L12=[56004]Started Editing.
-D2_L13=[56423]Stopped Editing.
-D2_E=36
-D2_D=0
-D2_L14=[57333]Project Closed.
+D1_L2=[41269]Project Closed.
+D2=08-11-2023
+D2_L=1
+D2_L1=[80027]Project Opened.
+D3=10-11-2023
+D3_L=2
+D3_L1=[50105]Project Opened.
+D3_L2=[50118]Project Closed.
 
 [fileformats]
 forcecoff=0
