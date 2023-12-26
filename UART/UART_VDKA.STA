@@ -1,0 +1,59 @@
+
+ROM used:   666/8192 (8%)
+            666/8192 (8%) including unused fragments
+
+            0.8 Average locations per line
+            12.1 Average locations per statement
+
+RAM used:   22/368 (6%) at main() level
+            36/368 (10%) worst case
+
+Stack used: 2 worst case (1 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   67    55 100  UART_VDKA.c
+  810     0   0  D:\Devices\16f887.h
+----- -----
+  877    55 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   3    1             @delay_ms1
+0     14   2    0    119  1.3  @const717
+0     26   4    0     92  2.9  demsp
+0    235  35    2     86  1.9  lm35
+ Inline         2     80  2.4  @ITOF
+ Inline        13     86  1.9  @MULFF
+ Inline         4             @SFTOI
+0    132  20    3    513  2.9  quetled
+0     21   3    3             @DIV88
+0     37   6    5    167  2.1  @DIV1616
+0    109  16    1    547  4.3  MAIN
+0     23   3    0    154  3.5  ngatuart
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               9
+    Statements              55
+    Comments                135
+    Volume (V)              2916
+    Difficulty (D)          23.4
+    Effort to implement (E) 68325
+    Time to implement (T)   1 hours, 3 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   7
+    Maintainability (MI)    97
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00030    45  0  
+00031-007FF   617  1382  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

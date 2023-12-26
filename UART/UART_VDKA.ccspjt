@@ -1,0 +1,59 @@
+[PROJECT]
+Target=UART_VDKA.hex
+Processor_Text=PIC16F887
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=UART_VDKA.c
+[UART_VDKA.c]
+Type=4
+[mru-list]
+1=UART_VDKA.c
+
+[defines]
+buildcount=15
+
+[Opened Files]
+1=UART_VDKA.c
+t1=46
+Count=2
+2=UART_VDKB.c
+t2=39
+
+[ProjectLog]
+Days=2
+D1=22-11-2023
+D1_L=9
+D1_L1=[37479]Project Closed.
+D1_L2=[37676]Project Opened.
+D1_L3=[37708]Started Editing.
+D1_L4=[37720]Stopped Editing.
+TotalEdit=7
+TotalDebug=0
+D1_E=2
+D1_D=0
+D1_L5=[37720]Project Closed.
+D1_L6=[37863]Project Opened.
+D1_L7=[37878]Started Editing.
+D1_L8=[38185]Stopped Editing.
+D1_L9=[43288]Project Closed.
+D2=24-11-2023
+D2_L=10
+D2_L1=[6621]Project Opened.
+D2_L2=[53036]Started Editing.
+D2_L3=[53212]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L4=[53212]Project Closed.
+D2_L5=[53795]Project Opened.
+D2_L6=[53806]Started Editing.
+D2_L7=[53880]Stopped Editing.
+D2_L8=[53880]Project Closed.
+D2_L9=[54063]Project Opened.
+D2_L10=[54076]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=UART_VDKA (main)

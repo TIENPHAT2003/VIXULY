@@ -1,0 +1,86 @@
+[PROJECT]
+Target=VDKB.hex
+Processor_Text=PIC16F887
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=VDKB.c
+[VDKB.c]
+Type=4
+[mru-list]
+1=VDKB.c
+
+[defines]
+buildcount=26
+
+[ProjectLog]
+Days=2
+D1=21-11-2023
+D1_L=43
+D1_L1=[83265]Started Editing.
+D1_L2=[83318]Stopped Editing.
+TotalEdit=17
+TotalDebug=0
+D1_E=17
+D1_D=0
+D1_L3=[83318]Project Closed.
+D1_L4=[83421]Project Opened.
+D1_L5=[83483]Started Editing.
+D1_L6=[83777]Project Closed.
+D1_L7=[84003]Project Opened.
+D1_L8=[84005]Started Editing.
+D1_L9=[84232]Stopped Editing.
+D1_L10=[84232]Project Closed.
+D1_L11=[84265]Project Opened.
+D1_L12=[84275]Project Closed.
+D1_L13=[84320]Project Opened.
+D1_L14=[84363]Started Editing.
+D1_L15=[84375]Stopped Editing.
+D1_L16=[84375]Project Closed.
+D1_L17=[84476]Project Opened.
+D1_L18=[84526]Started Editing.
+D1_L19=[84532]Stopped Editing.
+D1_L20=[84532]Project Closed.
+D1_L21=[84835]Project Opened.
+D1_L22=[84844]Started Editing.
+D1_L23=[84857]Stopped Editing.
+D1_L24=[84857]Project Closed.
+D1_L25=[84868]Project Opened.
+D1_L26=[84877]Project Closed.
+D1_L27=[85040]Project Opened.
+D1_L28=[85048]Started Editing.
+D1_L29=[85050]Stopped Editing.
+D1_L30=[85050]Project Closed.
+D1_L31=[85652]Project Opened.
+D1_L32=[85727]Project Opened.
+D1_L33=[85735]Started Editing.
+D1_L34=[85941]Stopped Editing.
+D1_L35=[85941]Project Closed.
+D1_L36=[85988]Project Opened.
+D1_L37=[86033]Started Editing.
+D1_L38=[86155]Stopped Editing.
+D1_L39=[86155]Project Closed.
+D1_L40=[86263]Project Opened.
+D1_L41=[86274]Started Editing.
+D1_L42=[86313]Stopped Editing.
+D1_L43=[86313]Project Closed.
+D2=22-11-2023
+D2_L=1
+D2_L1=[136]Project Opened.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=VDKB.c
+t1=9
+2=VDKA.c
+t2=21
+3=VDKB.c
+t3=1
+Count=2
+4=VDKA.c
+t4=33
+[Units]
+Count=1
+1=VDKB (main)

@@ -1,0 +1,22 @@
+#include<16f887.h>
+#device adc = 10
+#fuses hs
+#use delay(clock=20M)
+#USE RS232(baud =9600,xmit = pin_c6, rcv = pin_c7)
+
+
+void main()
+{
+   set_tris_a(0xff);
+   set_tris_b_(0);
+   set_tris_c(0x81);
+   set_tris_d(0);
+   setup_timer_1(T1_EXTERNAL|T1_DIV_BY_1);
+   set_timer1(0);
+   setup_adc(ADC_CLOCK_DIV_32);
+   setup_adc_ports(san4|vss_vdd);
+   while(true)
+   {
+      
+   }
+}

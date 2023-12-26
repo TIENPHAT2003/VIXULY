@@ -1,0 +1,58 @@
+#include<16f887.h>
+#device adc = 10
+#fuses hs
+#use delay(clock=20M)
+#USE RS232(baud =9600,xmit = pin_c6, rcv = pin_c7)
+unsigned int16 kq,nhan;
+unsigned int16 kqadc,nhanadc;
+const unsigned int8 ma7doan[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+void quetled()
+{
+      output_d(ma7doan[nhan/10%10]); output_low(pin_b4); delay_ms(1);output_high(pin_b4);
+      output_d(ma7doan[nhan/1%10]); output_low(pin_b5); delay_ms(1);output_high(pin_b5);
+      output_d(ma7doan[nhanadc/10%10]); output_low(pin_b6); delay_ms(1);output_high(pin_b6);
+      output_d(ma7doan[nhanadc/1%10]); output_low(pin_b7); delay_ms(1);output_high(pin_b7);
+}
+void demsp()
+{
+   kq=24-get_timer1();
+   if(kq<1) set_timer1(1);
+   putc(kq);
+//!   delay_ms(10);
+}
+void lm35()
+{
+   set_adc_channel(4);
+   kqadc=read_adc()*0.489;
+   putc(kqadc);
+//!   delay_ms(10);
+}
+
+void main()
+{
+   set_tris_a(0xff);
+   set_tris_b(0);
+   set_tris_c(0x81);
+   set_tris_d(0);
+   setup_timer_1(T1_EXTERNAL|T1_DIV_BY_1);
+   set_timer1(0);
+   setup_adc(ADC_CLOCK_DIV_32);
+   setup_adc_ports(san4|vss_vdd);
+   while(true)
+   {
+      quetled();
+      demsp();
+      lm35();
+   }
+}
+#INT_RDA
+#INT_RDA
+void ngatuart()
+{
+   if(i==0)
+   nhan=getc();
+   if(i==1)
+   nhanadc = getc();
+   i++;
+   if(i>1) i =0;
+}

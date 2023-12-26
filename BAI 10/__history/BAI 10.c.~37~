@@ -1,5 +1,5 @@
 #include<16f887.h>
-#device adc = 10
+#device adc =10
 #fuses hs
 #use delay(clock=20M)
 
@@ -10,25 +10,24 @@
 
 #include<tv_lcd.c>
 unsigned int8 kq;
-
-void demsp(){
+void demsp()
+{
    kq=get_timer0();
    if(kq>12) set_timer0(1);
    lcd_command(0x80);
-   printf(lcd_data,"SO SP: %02u CAI",kq);
+   printf(lcd_data,"SO SP: %02u CAI", kq);
 }
 void main()
-{  
+{
    set_tris_a(0xff);
    set_tris_c(0);
    set_tris_d(0);
    set_tris_e(0xff);
    lcd_setup();
-   setup_timer_0(T0_INTERNAL|T0_DIV_1);
+   setup_timer_0(T0_EXT_H_TO_L);
    set_timer0(0);
    while(true)
    {
       demsp();
    }
 }
-

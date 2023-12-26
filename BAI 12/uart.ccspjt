@@ -1,0 +1,38 @@
+[PROJECT]
+Target=uart.hex
+Processor_Text=PIC16F887
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=uart.c
+[uart.c]
+Type=4
+[mru-list]
+1=uart.c
+
+[defines]
+buildcount=7
+
+[ProjectLog]
+Days=1
+D1=22-11-2023
+D1_L=3
+D1_L1=[809]Started Editing.
+D1_L2=[1415]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L3=[1415]Project Closed.
+
+[Opened Files]
+1=VDKA.c
+t1=42
+2=VDKB.c
+t2=17
+3=uart.c
+t3=17
+Count=3
+[Units]
+Count=1
+1=uart (main)

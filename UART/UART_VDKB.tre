@@ -1,0 +1,54 @@
+ÀÄUART_VDKB
+   ÃÄMAIN  0/197  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄlcd_setup  0/18  Ram=0
+   ³  ³  ÃÄlcd_command  0/25  Ram=1
+   ³  ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_command  0/25  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/25  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ³  ÃÄdemsp  0/26  Ram=0
+   ³  ÃÄlm35  0/235  Ram=2
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄ@ITOF  (Inline)  Ram=2
+   ³  ³  ÃÄ@MULFF  (Inline)  Ram=13
+   ³  ³  ÀÄ@SFTOI  (Inline)  Ram=4
+   ³  ÀÄhienthi  0/210  Ram=0
+   ³     ÃÄlcd_command  0/25  Ram=1
+   ³     ³  ÀÄ*
+   ³     ÃÄ@PSTRINGCN7_719  0/87  Ram=5
+   ³     ³  ÃÄlcd_data  0/25  Ram=1
+   ³     ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+   ³     ³  ÀÄlcd_data  0/25  Ram=1
+   ³     ³     ÀÄ*
+   ³     ÃÄ@PRINTF_U_719  (Inline)  Ram=2
+   ³     ³  ÃÄ@DIV88  0/21  Ram=3
+   ³     ³  ÃÄlcd_data  0/25  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@DIV88  0/21  Ram=3
+   ³     ³  ÃÄlcd_data  0/25  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄlcd_data  0/25  Ram=1
+   ³     ³     ÀÄ*
+   ³     ÃÄ@PSTRINGCN7_719  0/87  Ram=5
+   ³     ³  ÀÄ*
+   ³     ÃÄlcd_command  0/25  Ram=1
+   ³     ³  ÀÄ*
+   ³     ÃÄ@PSTRINGCN7_719  0/87  Ram=5
+   ³     ³  ÀÄ*
+   ³     ÃÄ@PRINTF_LU_719  (Inline)  Ram=9
+   ³     ³  ÀÄlcd_data  0/25  Ram=1
+   ³     ³     ÀÄ*
+   ³     ÃÄlcd_data  0/25  Ram=1
+   ³     ³  ÀÄ*
+   ³     ÃÄlcd_data  0/25  Ram=1
+   ³     ³  ÀÄ*
+   ³     ÃÄlcd_command  0/25  Ram=1
+   ³     ³  ÀÄ*
+   ³     ÀÄlcd_data  0/25  Ram=1
+   ³        ÀÄ*
+   ÀÄngatuart  0/31  Ram=0

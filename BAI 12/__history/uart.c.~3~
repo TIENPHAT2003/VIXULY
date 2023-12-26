@@ -1,0 +1,14 @@
+#include<16f887.h>
+#device adc = 10
+#fuses hs
+#use delay(clock=20M)
+#USE RS232(baud =9600,xmit = pin_c6, rcv = pin_c7)
+const unsigned int8 ma7doan[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+
+void main()
+{
+   while(true)
+   {
+      
+   }
+}

@@ -165,19 +165,19 @@ ROM Allocation:
 000473  @cinit2
 
 Project Directory:
-    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 10\
+    C:\Users\84859\Desktop\VXL\BAI 10\
 
 Project Files:
-    BAI 10.c                                                [10-Nov-23 14:44  CRC=9581D43D]
-    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [21-Oct-22 11:02  CRC=A60F11E5]
+    BAI 10.c                                                [12-Nov-23 23:19  CRC=9581D43D]
+    D:\Devices\16f887.h                                     [07-Mar-23 19:19  CRC=A824942D]
     tv_lcd.c                                                [11-Oct-23 22:50  CRC=85F53194]
 
-Source signature=477B494A
+Source signature=4990CB92
 Program memory checksum=0000
 Hex file CRC=DCA7
 
 Units:
-    C:\Users\defaultuser0.LAPTOP-POTNR7PE\OneDrive - hcmute.edu.vn\Desktop\VXL\BAI 10\BAI 10 (main)
+    C:\Users\84859\Desktop\VXL\BAI 10\BAI 10 (main)
 
 Compiler Settings:
     Processor:      PIC16F887

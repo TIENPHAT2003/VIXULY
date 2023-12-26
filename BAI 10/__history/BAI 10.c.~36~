@@ -1,5 +1,5 @@
 #include<16f887.h>
-#device adc = 10
+#device adc =10
 #fuses hs
 #use delay(clock=20M)
 
@@ -17,4 +17,3 @@ void main()
       
    }
 }
-

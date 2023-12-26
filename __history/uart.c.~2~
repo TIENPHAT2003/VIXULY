@@ -1,0 +1,55 @@
+#include <16f887.h>
+#device adc=10
+#fuses hs
+#use delay(clock=20m)
+const unsigned int8 maled[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+unsigned int16 nd1;
+unsigned int8 sp1,nhan[2],i=0,y;
+#USE RS232(baud =9600,xmit = pin_c6, rcv = pin_c7)
+void quetled()
+{
+      output_d(maled[nhan[1]/10%10]); output_low(pin_b4); delay_ms(1);output_high(pin_b4);
+      output_d(maled[nhan[1]/1%10]); output_low(pin_b5); delay_ms(1);output_high(pin_b5);
+      output_d(maled[nhan[0]/10%10]); output_low(pin_b6); delay_ms(1);output_high(pin_b6);
+      output_d(maled[nhan[0]/1%10]); output_low(pin_b7); delay_ms(1);output_high(pin_b7);
+      
+}
+void main()
+{
+   set_tris_a(0xff);
+   set_tris_b(0);
+   set_tris_c(0x80);
+   set_tris_d(0);
+   setup_timer_1(t1_external|t0_div_by_1);
+   set_timer1(0);
+   setup_adc(adc_clock_div_32);
+   setup_adc_ports(san0|vss_vdd);
+   set_adc_channel(0);
+   delay_ms(1);
+   enable_interrupts(INT_RDA);
+   enable_interrupts(GLOBAL);
+   while(TRUE)
+   {
+      sp1=get_timer1();
+      if(sp1>24)
+      {
+         sp1=1;
+         set_timer0(1);
+      }
+      nd1=read_adc()*0.489;
+      putc(nd1);
+      putc(sp1);
+      for(y=0;y<100;y++)
+      {
+         quetled();
+      }
+      quetled();
+   }
+
+}
+#INT_RDA
+void ngatnhanuart()
+{
+      nhan[i] = getc();              // nhan du lieu uart ve
+      i=!i;
+} 

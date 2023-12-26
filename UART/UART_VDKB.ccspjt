@@ -1,0 +1,57 @@
+[PROJECT]
+Target=UART_VDKB.hex
+Processor_Text=PIC16F887
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=UART_VDKB.c
+[UART_VDKB.c]
+Type=4
+[mru-list]
+1=UART_VDKB.c
+
+[defines]
+buildcount=10
+
+[ProjectLog]
+Days=2
+D1=22-11-2023
+D1_L=7
+D1_L1=[37489]Started Editing.
+D1_L2=[37676]Stopped Editing.
+TotalEdit=16
+TotalDebug=0
+D1_E=5
+D1_D=0
+D1_L3=[37676]Project Closed.
+D1_L4=[37720]Project Opened.
+D1_L5=[37848]Started Editing.
+D1_L6=[37863]Stopped Editing.
+D1_L7=[37863]Project Closed.
+D2=24-11-2023
+D2_L=10
+D2_L1=[53212]Project Opened.
+D2_L2=[53352]Started Editing.
+D2_L3=[53795]Stopped Editing.
+D2_E=11
+D2_D=0
+D2_L4=[53795]Project Closed.
+D2_L5=[53880]Project Opened.
+D2_L6=[53887]Started Editing.
+D2_L7=[54063]Stopped Editing.
+D2_L8=[54063]Project Closed.
+D2_L9=[54076]Project Opened.
+D2_L10=[54218]Project Closed.
+
+[Opened Files]
+1=UART_VDKA.c
+t1=46
+2=UART_VDKB.c
+t2=46
+Count=2
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=UART_VDKB (main)

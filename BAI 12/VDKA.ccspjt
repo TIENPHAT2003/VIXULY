@@ -1,0 +1,105 @@
+[PROJECT]
+Target=VDKA.hex
+Processor_Text=PIC16F887
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=VDKA.c
+[VDKA.c]
+Type=4
+[mru-list]
+1=VDKA.c
+
+[defines]
+buildcount=49
+
+[Opened Files]
+1=VDKA.c
+t1=37
+Count=2
+2=VDKB.c
+t2=17
+3=uart.c
+t3=15
+4=VDKA.c
+t4=1
+
+[ProjectLog]
+Days=2
+D1=21-11-2023
+D1_L=49
+D1_L1=[83194]Project Closed.
+D1_L2=[83318]Project Opened.
+D1_L3=[83326]Started Editing.
+D1_L4=[83421]Stopped Editing.
+TotalEdit=24
+TotalDebug=0
+D1_E=15
+D1_D=0
+D1_L5=[83421]Project Closed.
+D1_L6=[83817]Project Opened.
+D1_L7=[83848]Started Editing.
+D1_L8=[84003]Stopped Editing.
+D1_L9=[84003]Project Closed.
+D1_L10=[84232]Project Opened.
+D1_L11=[84237]Started Editing.
+D1_L12=[84265]Stopped Editing.
+D1_L13=[84265]Project Closed.
+D1_L14=[84275]Project Opened.
+D1_L15=[84320]Project Closed.
+D1_L16=[84375]Project Opened.
+D1_L17=[84411]Started Editing.
+D1_L18=[84476]Stopped Editing.
+D1_L19=[84476]Project Closed.
+D1_L20=[84532]Project Opened.
+D1_L21=[84784]Started Editing.
+D1_L22=[84835]Stopped Editing.
+D1_L23=[84835]Project Closed.
+D1_L24=[84857]Project Opened.
+D1_L25=[84868]Project Closed.
+D1_L26=[84877]Project Opened.
+D1_L27=[85018]Started Editing.
+D1_L28=[85040]Stopped Editing.
+D1_L29=[85040]Project Closed.
+D1_L30=[85050]Project Opened.
+D1_L31=[85117]Started Editing.
+D1_L32=[85436]Project Closed.
+D1_L33=[85652]Project Opened.
+D1_L34=[85663]Project Opened.
+D1_L35=[85668]Started Editing.
+D1_L36=[85674]Stopped Editing.
+D1_L37=[85722]Started Editing.
+D1_L38=[85727]Stopped Editing.
+D1_L39=[85727]Project Closed.
+D1_L40=[85941]Project Opened.
+D1_L41=[85981]Started Editing.
+D1_L42=[85988]Stopped Editing.
+D1_L43=[85988]Project Closed.
+D1_L44=[86155]Project Opened.
+D1_L45=[86221]Started Editing.
+D1_L46=[86263]Stopped Editing.
+D1_L47=[86263]Project Closed.
+D1_L48=[86313]Project Opened.
+D1_L49=[86394]Started Editing.
+D2=22-11-2023
+D2_L=12
+D2_L1=[136]Stopped Editing.
+D2_E=9
+D2_D=0
+D2_L2=[136]Project Closed.
+D2_L3=[704]Project Opened.
+D2_L4=[712]Started Editing.
+D2_L5=[787]Project Closed.
+D2_L6=[1415]Project Opened.
+D2_L7=[1436]Started Editing.
+D2_L8=[1754]Stopped Editing.
+D2_L9=[1754]Project Closed.
+D2_L10=[33897]Project Opened.
+D2_L11=[34196]Started Editing.
+D2_L12=[34231]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=VDKA (main)

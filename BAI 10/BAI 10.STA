@@ -14,7 +14,7 @@ Stack size: 8
 Lines Stmts  %   Files
 ----- ----- ---  -----
   116    79  82  BAI 10.c
-  810     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h
+  810     0   0  D:\Devices\16f887.h
    25    17  18  tv_lcd.c
 ----- -----
   951    96 Total
@@ -31,12 +31,12 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0     87   7    5             @PSTRINGCN7_710
 0     21   2    3             @DIV88
 0     53   4    2             @PRINTF_U_710
-0     59   5    0    349  4.1  demtimer1
+0     59   5    0    349  4.0  demtimer1
 0     13   1    0             @const735
 0     60   5    0    364  4.5  demtimer2
 0     13   1    0             @const737
 0     67   6    0    391  2.3  lm35
-0     99   8    9     29  1.2  @PRINTF_LU_710
+0     99   8    9             @PRINTF_LU_710
 0    101   8    0    539  2.9  MAIN
 0     11   1    0     29  1.2  ngattimer1
 0      5   0    0     13  1.0  ngattimer2
@@ -47,16 +47,16 @@ Page ROM  %  RAM    Vol Diff  Functions:
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               12
+    Functions               11
     Statements              96
     Comments                135
-    Volume (V)              3689
-    Difficulty (D)          26.2
-    Effort to implement (E) 96665
-    Time to implement (T)   1 hours, 30 minutes
+    Volume (V)              3597
+    Difficulty (D)          24.6
+    Effort to implement (E) 88438
+    Time to implement (T)   1 hours, 22 minutes
     Est Delivered Bugs (B)  1
     Cyclomatic Complexity   9
-    Maintainability (MI)    63
+    Maintainability (MI)    68
 
  Segment     Used  Free
 -----------  ----  ----
